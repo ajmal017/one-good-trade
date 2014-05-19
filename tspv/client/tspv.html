@@ -3,31 +3,40 @@
 		<title>TradeStation Position View</title>
 	</head>
 
-	<div class="container">
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-		  <div class="container">
-		    <a class="navbar-brand" href="#">TradeStation Position View</a>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+	    <a class="navbar-brand" href="#">TradeStation Position View</a>
+    </div>
 
-		    <div class="pull-right">
-					<div class="authenticate hidden">
-						<a class="authenticate" href="">Sync Account</a>
-					</div>
+    <ul class="nav navbar-nav">
+      <li class="{{#if isAccountList}}active{{/if}}"><a href="{{pathFor 'accountList'}}">Portfolio</a></li>
+      <li class="{{#if isWatchlist}}active{{/if}}"><a href="{{pathFor 'watchlist'}}">Watchlist</a></li>
+      <li class="{{#if isSectorEtfs}}active{{/if}}"><a href="{{pathFor 'sectorEtfs'}}">Market/Sector</a></li>
+      <li class="{{#if isBondsCommodities}}active{{/if}}"><a href="{{pathFor 'bondsCommodities'}}">Bonds/Commodities</a></li>
+      <li class="{{#if isWeeklies}}active{{/if}}"><a href="{{pathFor 'weeklies'}}">Weeklies</a></li>
+    </ul>
 
-					<div class="authenticated hidden">
-						<p>
-						You are Logged In
-						</p>
-					</div>
-		    </div>
+		<ul class="nav navbar-nav navbar-right">
+      <li>
+          <p class="authenticated navbar-text hidden">Signed in</p>
+      </li>
+      <li>
+        <button type="button" class="btn btn-default btn-success navbar-btn hidden" id="navAuthenticate">Sync Account</button>
 
-		  </div>
-		</nav>
+        <!--
+        <button type="button" class="btn btn-default btn-success navbar-btn" id="tester">Print Token</button>
+        -->
+      </li>
+    </ul>
 
+  </div>
+</nav>
 
-		<div id="main" class="row-fluid">
-			{{> yield}}
-		</div>
-	</div>
+<div id="main" class="row-fluid">
+	{{> yield}}
+</div>
+
 </template>
 
 <template name="loading">
@@ -39,12 +48,67 @@
 </template>
 
 
+
+
+
 <template name="accountList">
+  <h3>Portfolio</h3>
 	{{#each accounts}}
 		{{> account}}
 	{{/each}}
 </template>
 
+<template name="watchlist">
+  <div class="post">
+    <h3 style="margin-right: 15px;" class="pull-left">Watchlist</h3>
+
+    <form class="form-inline" style="margin-top: 18px;" role="form">
+        <div class="form-group">
+          <input type="text" id="symbolInput" class="form-control" style="width: 150px;" placeholder="Enter Symbol">
+        </div>
+        <button id="addWatchlist" class="btn btn-default">Add</button>
+    </form>
+    <hr />
+
+
+    {{#each watchlist}}
+      {{> watchlistSymbol}}
+    {{/each}}
+  </div>
+</template>
+
+<template name="sectorEtfs">
+  <div class="post">
+    <h3>Market/Sector</h3>
+    {{#each symbols}}
+      {{> chart}}
+    {{/each}}
+  </div>
+</template>
+
+<template name="bondsCommodities">
+  <div class="post">
+    <h3>Bonds and Commodities</h3>
+    {{#each symbols}}
+      {{> chart}}
+    {{/each}}
+  </div>
+</template>
+
+<template name="weeklies">
+  <div class="post">
+    <h3 style="margin-right: 15px;" class="pull-left">Weeklies</h3>
+
+    <form class="form-inline" style="margin-top: 18px;" role="form">
+        <button type="button" class="btn btn-default btn-success" id="getWeeklies">Refresh Weeklies</button>
+    </form>
+    <hr />
+
+    {{#each weeklies}}
+      {{> watchlistSymbol}}
+    {{/each}}
+  </div>
+</template>
 
 <template name="account">
 	<div class="post">
@@ -57,15 +121,42 @@
 	</div>
 </template>
 
+
+<template name="chart">
+<div style="width: 360px; display: inline-block; float: left;">
+<a target="_blank" href="http://stockcharts.com/h-sc/ui?s={{Symbol}}">
+<img class="charts" src="http://walkingideas.com/z/proxy.php?url=http%3A%2F%2Fstockcharts.com%2Fc-sc%2Fsc%3Fr%3D143680%26chart%3D{{Symbol}}%2Cuu%5B350%2Ca%5Ddacayaci%5Bpb20!b50%5D%5Bdg%5D&ts={{currentTimestamp}}" />
+</a>
+{{> earnings}}
+</div>
+</template>
+
+<template name="watchlistSymbol">
+<div style="width: 360px; display: inline-block; float: left; background-color: #f9f9f9; margin: 3px; padding: 5px;">
+<div style="padding-left: 15px;">
+{{> earnings}}
+  <button class="btn btn-xs btn-danger removeSymbol pull-right" style="margin-right: 28px;" id="removeSymbol_{{Symbol}}"><span class="glyphicon glyphicon-remove"></span> Remove</button><br />
+</div>
+<a target="_blank" href="http://stockcharts.com/h-sc/ui?s={{Symbol}}">
+<img class="charts" src="http://walkingideas.com/z/proxy.php?url=http%3A%2F%2Fstockcharts.com%2Fc-sc%2Fsc%3Fr%3D143680%26chart%3D{{Symbol}}%2Cuu%5B350%2Ca%5Ddacayaci%5Bpb20!b50%5D%5Bdg%5D&ts={{currentTimestamp}}" />
+</a>
+</div>
+</template>
+
 <template name="symbol">
 <div style="width: 360px; display: inline-block; float: left;">
-<img src="http://walkingideas.com/z/proxy.php?url=http%3A%2F%2Fstockcharts.com%2Fc-sc%2Fsc%3Fr%3D143680%26chart%3D{{Symbol}}%2Cuu%5B350%2Ca%5Ddacayaci%5Bpb20!b50%5D%5Bdg%5D" />
+<a target="_blank" href="http://stockcharts.com/h-sc/ui?s={{Symbol}}">
+<img class="charts" src="http://walkingideas.com/z/proxy.php?url=http%3A%2F%2Fstockcharts.com%2Fc-sc%2Fsc%3Fr%3D143680%26chart%3D{{Symbol}}%2Cuu%5B350%2Ca%5Ddacayaci%5Bpb20!b50%5D%5Bdg%5D&ts={{currentTimestamp}}" />
+</a>
 <ul>
 {{#each Positions}}
 	<li>{{Symbol}} x {{Quantity}} = {{AccountMarketValue}} USD</li>
 {{/each}}
+  <li>{{> earnings}}</li>
 </ul>
 </div>
 </template>
 
-
+<template name="earnings">
+Earnings: <span id="earnings_{{sanitizedSymbol}}">...</span>
+</template>

@@ -58,7 +58,12 @@ Meteor.methods({
     return symbols;
   },
 
-
+  replaceAccount: function(account) {
+    Accounts.remove({
+      Key : account['Key']
+    });
+    Accounts.insert(account);
+  },
 
   replaceAccounts: function(accounts) {
     Accounts.remove({});

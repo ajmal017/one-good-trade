@@ -112,11 +112,17 @@
 
 <template name="account">
 	<div class="post">
-		<div class="post-content">
-			<h3>{{Name}} . {{TypeDescription}}</h3>
-			{{#each Symbols}}
-			  {{> symbol}}
-			{{/each}}
+		<div class="post-content" style="width: 100%;">
+			<h3 class="pull-left">{{Name}} . {{TypeDescription}}</h3>
+			<div class="pull-right h4" style="margin-top: 0px; width: 120px;"><small>As Percentage</small><br />{{BuyingPowerPercentage}}%</div>
+			<div class="pull-right h4" style="margin-top: 0px; width: 120px;"><small>Buying Power</small><br />${{RealTimeBuyingPower}}</div>
+			<div class="pull-right h4" style="margin-top: 0px; width: 120px;"><small>Equity</small><br />${{RealTimeEquity}}</div>
+
+			<div style="clear: both;">
+{{#each Symbols}}
+	{{> symbol}}
+{{/each}}
+			</div>
 		</div>
 	</div>
 </template>
@@ -135,7 +141,15 @@
 <div style="width: 360px; display: inline-block; float: left; background-color: #f9f9f9; margin: 3px; padding: 5px;">
 <div style="padding-left: 15px;">
 {{> earnings}}
-  <button class="btn btn-xs btn-danger removeSymbol pull-right" style="margin-right: 28px;" id="removeSymbol_{{Symbol}}"><span class="glyphicon glyphicon-remove"></span> Remove</button><br />
+  <button class="btn btn-xs btn-danger removeSymbol pull-right" style="margin-right: 5px;" id="removeSymbol_{{Symbol}}">
+		<span class="glyphicon glyphicon-remove"></span>
+	</button>
+
+	<button class="btn btn-xs btn-success addToWatchlist pull-right" style="margin-right: 8px;" id="addToWatchlist_{{Symbol}}">
+		<span class="glyphicon glyphicon-star"></span>
+	</button>
+
+	<br />
 </div>
 <a target="_blank" href="http://stockcharts.com/h-sc/ui?s={{Symbol}}">
 <img class="charts" src="http://walkingideas.com/z/proxy.php?url=http%3A%2F%2Fstockcharts.com%2Fc-sc%2Fsc%3Fr%3D143680%26chart%3D{{Symbol}}%2Cuu%5B350%2Ca%5Ddacayaci%5Bpb20!b50%5D%5Bdg%5D&ts={{currentTimestamp}}" />
@@ -150,8 +164,9 @@
 </a>
 <ul>
 {{#each Positions}}
-	<li>{{Symbol}} x {{Quantity}} = {{AccountMarketValue}} USD</li>
+	<li>{{Symbol}} x {{Quantity}} = ${{AccountMarketValue}}</li>
 {{/each}}
+	<li>P&amp;L: ${{TotalOpenProfitLoss}}</li>
   <li>{{> earnings}}</li>
 </ul>
 </div>

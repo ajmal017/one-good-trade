@@ -43,12 +43,18 @@ Template.layout.helpers({
   },
 })
 
+Template.account.helpers({
+  BuyingPowerPercentage: function() {
+    return Math.round(this.RealTimeBuyingPower / this.RealTimeEquity * 10000) / 100;
+  },
+})
+
 Template.accountList.helpers({
   accounts: function() {
     return Accounts.find();
-    //return Session.get("accounts");
-  }
+  },
 });
+
 
 Template.accountList.rendered = function() {
   pullAccounts();
@@ -58,6 +64,15 @@ Template.accountList.rendered = function() {
 Template.symbol.helpers({
   currentTimestamp: function() {
     return (new Date()).getTime();
+  },
+
+  TotalOpenProfitLoss: function() {
+    var sum = 0;
+    this.Positions.forEach(function(pos) {
+      sum += pos.OpenProfitLoss;
+    });
+
+    return sum;
   }
 });
 
@@ -175,13 +190,54 @@ function pullAccounts() {
       }
     },
     success: function(data) {
-      Meteor.call("replaceAccounts", data);
-      pullPositions();
+      console.log(data);
+      data.forEach(function(account) {
+        pullAccount(account['Key']);
+      });
     }
   });
 }
 
+function pullAccount(accountKey) {
+  token = amplify.store("ts_token");
+  if (!token) return;
 
+  var url = host + "/accounts/" + accountKey + "/balances";
+
+  $.ajax(url, {
+    type: "GET",
+    data: {
+      oauth_token: token
+    },
+    error: function(xhr, status, error) {
+      if (error == "Unauthorized") {
+        logoutTS();
+      }
+    },
+    success: function(data) {
+      var url = host + "/accounts/" + accountKey + "/positions";
+      $.ajax(url, {
+        type: "GET",
+        data: {
+          oauth_token: token
+        },
+        error: function(xhr, status, error) {
+          if (error == "Unauthorized") {
+            logoutTS();
+          }
+        },
+        success: function(positions) {
+          positions.forEach(function(pos){
+            addPositionToAccount(pos, data[0]);
+          })
+          Meteor.call("replaceAccount", data[0]);
+        }
+      });
+    }
+  });
+}
+
+// NOTE: CURRENTLY UNUSED
 function pullPositions() {
   var url = host + "/users/" + amplify.store("ts_userid") + "/positions";
 
@@ -196,32 +252,11 @@ function pullPositions() {
       console.log(error);
     },
     success: function(data) {
-
-      var accounts = Accounts.find().fetch();
-      for (var i=0; i < accounts.length; i++) {
-        account = accounts[i];
-        account.positions = [];
-      }
-
-      for (var i=0; i < data.length; i++) {
-        var pos = data[i];
-
-        for (var j=0; j < accounts.length; j++) {
-          account = accounts[j];
-          if (account.DisplayName == pos.DisplayName) {
-            // found it, add it
-            addPositionToAccount(pos, account);
-            break;
-          }
-        }
-      }
-
-
-      Meteor.call("replaceAccounts", accounts);
       Meteor.call("replacePositions", data);
     }
   });
 }
+
 
 // adding a position to account. we're doing some collation here because
 // the positions are organized by symbols

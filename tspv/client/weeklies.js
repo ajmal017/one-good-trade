@@ -8,6 +8,15 @@ Template.weeklies.events({
       _id: item._id
     });
   },
+
+  'click .addToWatchlist' : function(e) {
+    var symbol = e.target.id.replace("addToWatchlist_","");
+    var data = {
+      Symbol: symbol
+    };
+
+    Watchlist.insert(data);
+  }
 });
 
 Template.weeklies.helpers({

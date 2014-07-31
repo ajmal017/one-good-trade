@@ -25,5 +25,6 @@ Template.watchlist.events({
     Watchlist.remove({
       _id: watchlistItem._id
     });
+    showSimpleNotification(symbol +" removed from watchlist.");
   },
 })

@@ -7,6 +7,7 @@ Template.weeklies.events({
     Weeklies.remove({
       _id: item._id
     });
+    showSimpleNotification(symbol +" removed from weeklies.");
   },
 
   'click .addToWatchlist' : function(e) {
@@ -16,6 +17,7 @@ Template.weeklies.events({
     };
 
     Watchlist.insert(data);
+    showSimpleNotification(symbol +" added to watchlist.");
   }
 });
 

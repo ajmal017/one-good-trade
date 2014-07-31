@@ -141,6 +141,7 @@
 <div style="width: 360px; display: inline-block; float: left; background-color: #f9f9f9; margin: 3px; padding: 5px;">
 <div style="padding-left: 15px;">
 {{> earnings}}
+
   <button class="btn btn-xs btn-danger removeSymbol pull-right" style="margin-right: 5px;" id="removeSymbol_{{Symbol}}">
 		<span class="glyphicon glyphicon-remove"></span>
 	</button>
@@ -149,6 +150,10 @@
 		<span class="glyphicon glyphicon-star"></span>
 	</button>
 
+  <button class="btn btn-xs btn-primary viewTradeIdeas pull-right" style="margin-right: 5px;" id="viewTradeIdeas_{{Symbol}}">
+    <span class="glyphicon glyphicon-eye-open"></span>
+  </button>
+  
 	<br />
 </div>
 <a target="_blank" href="http://stockcharts.com/h-sc/ui?s={{Symbol}}">

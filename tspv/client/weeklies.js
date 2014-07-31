@@ -1,25 +1,10 @@
 Template.weeklies.events({
-  'click .removeSymbol' : function(e) {
-    var symbol = e.currentTarget.id.replace("removeSymbol_","");
-    var item = Weeklies.findOne({
-      Symbol:symbol
-    })
-    Weeklies.remove({
-      _id: item._id
-    });
-    showSimpleNotification(symbol +" removed from weeklies.");
-  },
-
-  'click .addToWatchlist' : function(e) {
-    var symbol = e.currentTarget.id.replace("addToWatchlist_","");
-    var data = {
-      Symbol: symbol
-    };
-
-    Watchlist.insert(data);
-    showSimpleNotification(symbol +" added to watchlist.");
+  'click #getWeeklies' : function(e) {
+    token = getTSToken();
+    Meteor.call("refreshWeeklies", token);
   }
 });
+
 
 Template.weeklies.helpers({
   weeklies: function() {

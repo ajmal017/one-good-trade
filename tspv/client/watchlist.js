@@ -14,6 +14,21 @@ Template.watchlist.events({
       };
 
       Watchlist.insert(data);
+      showSimpleNotification(symbol.toUpperCase() +" added to watchlist.");
+    }
+  },
+})
+
+Template.watchlistSymbol.events({
+  'click .addToWatchlist' : function(e) {
+    var symbol = e.currentTarget.id.replace("addToWatchlist_","");
+    if (symbol) {
+      var data = {
+        Symbol: symbol
+      };
+
+      Watchlist.insert(data);
+      showSimpleNotification(symbol.toUpperCase() +" added to watchlist.");
     }
   },
 
@@ -27,4 +42,10 @@ Template.watchlist.events({
     });
     showSimpleNotification(symbol +" removed from watchlist.");
   },
-})
+
+  'click .viewTradeIdeas' : function(e) {
+    var symbol = e.currentTarget.id.replace("viewTradeIdeas_", "");
+    var url = "http://www.trade-ideas.com/ticky/ticky.html?symbol=" + symbol;
+    window.open(url, "_blank");
+  }
+});

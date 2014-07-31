@@ -88,13 +88,6 @@ Template.earnings.helpers({
   },
 });
 
-Template.weeklies.events({
-  'click #getWeeklies' : function(e) {
-    token = getTSToken();
-    Meteor.call("refreshWeeklies", token);
-  }
-});
-
 function makeEarningsCallback(symbol, error, result) {
   if (result) {
     $("#earnings_" + sanitizeSymbolForHtmlId(symbol)).html(result);

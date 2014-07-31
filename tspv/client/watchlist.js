@@ -18,7 +18,7 @@ Template.watchlist.events({
   },
 
   'click .removeSymbol' : function(e) {
-    var symbol = e.target.id.replace("removeSymbol_","");
+    var symbol = e.currentTarget.id.replace("removeSymbol_","");
     var watchlistItem = Watchlist.findOne({
       Symbol:symbol
     })

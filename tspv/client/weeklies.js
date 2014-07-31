@@ -1,6 +1,6 @@
 Template.weeklies.events({
   'click .removeSymbol' : function(e) {
-    var symbol = e.target.id.replace("removeSymbol_","");
+    var symbol = e.currentTarget.id.replace("removeSymbol_","");
     var item = Weeklies.findOne({
       Symbol:symbol
     })
@@ -10,7 +10,7 @@ Template.weeklies.events({
   },
 
   'click .addToWatchlist' : function(e) {
-    var symbol = e.target.id.replace("addToWatchlist_","");
+    var symbol = e.currentTarget.id.replace("addToWatchlist_","");
     var data = {
       Symbol: symbol
     };

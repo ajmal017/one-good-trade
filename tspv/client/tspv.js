@@ -61,6 +61,102 @@ Template.accountList.rendered = function() {
   accountList_refresh = setInterval( refreshCharts, 15000);
 }
 
+Template.symbolPosition.helpers({
+  isOption: function() {
+    var parts = this.Symbol.split(" ");
+    if (parts.length > 1)
+      return true;
+    else
+      return false;
+  },
+
+  Delta: function() {
+    var data = getOptionDataFromSymbol(this.Symbol);
+    var today = getToday();
+    var date_delta = daysBetween(today, data["exp"]);
+    var option_price = (this.AskPrice + this.BidPrice) / 2;
+    var stock_price = Session.get("stockticker_" + data["symbol"]);
+    var strike_price = data["strike"];
+
+    var old_price = Session.get("stockticker_" + data["symbol"]);
+    var age = Session.get("stockticker_age_" + data["symbol"]);
+    var now = new Date();
+
+    if (now - age < 60 * 1000) {
+      var stock_price = old_price;
+    }
+    else {
+      getStockPrice(data["symbol"]);
+      return "...";
+    }
+
+    if (!(date_delta && option_price && stock_price)) return "...";
+
+    var iv = get_iv(
+      (data["type"] == "C"),      
+      stock_price,
+      strike_price,
+      0,
+      date_delta,
+      option_price
+    );
+
+    var greeks = black_scholes(
+      (data["type"] == "C"),
+      stock_price,
+      strike_price,
+      0,
+      iv,
+      date_delta/365
+    );
+
+    return Math.round(greeks["delta"] * 1000) / 1000;
+  },
+
+  Theta: function() {
+    var data = getOptionDataFromSymbol(this.Symbol);
+    var today = getToday();
+    var date_delta = daysBetween(today, data["exp"]);
+    var option_price = (this.AskPrice + this.BidPrice) / 2;
+    var strike_price = data["strike"];
+
+    var old_price = Session.get("stockticker_" + data["symbol"]);
+    var age = Session.get("stockticker_age_" + data["symbol"]);
+    var now = new Date();
+
+    // cache for 1 min
+    if (now - age < 60 * 1000) {
+      var stock_price = old_price;
+    }
+    else {
+      getStockPrice(data["symbol"]);
+      return "...";
+    }
+
+    if (!(date_delta && option_price && stock_price)) return "...";
+
+    var iv = get_iv(
+      (data["type"] == "C"),
+      stock_price,
+      strike_price,
+      0,
+      date_delta,
+      option_price
+    );
+
+    var greeks = black_scholes(
+      (data["type"] == "C"),
+      stock_price,
+      strike_price,
+      0,
+      iv,
+      date_delta/365
+    );
+
+    return Math.round(greeks["theta"] * 100000 / 365) / 100000;
+  }
+});
+
 Template.symbol.helpers({
   currentTimestamp: function() {
     return (new Date()).getTime();

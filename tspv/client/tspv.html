@@ -18,8 +18,11 @@
     </ul>
 
 		<ul class="nav navbar-nav navbar-right">
-      <li>
-          <p class="authenticated navbar-text hidden">Signed in</p>
+      <li class="authenticated hidden">
+        <button type="button" class="btn btn-default btn-success navbar-btn" id="syncOrderHistory" data-loading-text="Syncing Orders...">Sync Order History</button>
+      </li>
+      <li class="authenticated hidden">
+        <p class="navbar-text">Signed in</p>
       </li>
       <li>
         <button type="button" class="btn btn-default btn-success navbar-btn hidden" id="navAuthenticate">Sync Account</button>

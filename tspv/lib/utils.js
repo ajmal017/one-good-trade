@@ -63,9 +63,29 @@ treatAsUTC = function(date) {
 }
 
 getToday = function() {
-  today = new Date();
+  return new Date();
+}
+
+getStartOfToday = function() {
+  var today = getToday();
   return new Date(today.getFullYear(), today.getMonth(), today.getDate());
 }
+
+getEndOfToday = function() {
+  var startOfToday = getStartOfToday();
+  return new Date(startOfToday.getTime() + (24 * 60 * 60 * 1000 * 1));
+}
+
+getStartOfXDaysAgo = function(days) {
+  var startOfToday = getStartOfToday();
+  return new Date(startOfToday.getTime() - (24 * 60 * 60 * 1000 * days));
+}
+
+getEndOfXDaysAgo = function(days) {
+  var startOfToday = getStartOfToday();
+  return new Date(startOfToday.getTime() - (24 * 60 * 60 * 1000 * (days-1)));
+}
+
 
 daysBetween = function(startDate, endDate) {
     var millisecondsPerDay = 24 * 60 * 60 * 1000;

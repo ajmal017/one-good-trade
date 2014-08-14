@@ -1,6 +1,8 @@
 Cheerio = Meteor.require('cheerio');
 cheerio = new Cheerio();
 
+moment = Meteor.require('moment');
+
 Meteor.methods({
   getNextEarningDate: function(symbol) {
     symbol = symbol.toLowerCase();
@@ -56,6 +58,21 @@ Meteor.methods({
       });
     });
     return symbols;
+  },
+
+  recordOrders: function(orders) {
+    orders.forEach(function(order) {
+      Meteor.call("recordOrder", order);
+    });
+  },
+
+  recordOrder: function(order) {
+    found = Orders.findOne({_id: order._id});
+
+    if (!found) {
+      console.log("inserting order with id " + order._id);
+      Orders.insert(order);
+    }
   },
 
   replaceAccount: function(account) {

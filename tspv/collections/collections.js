@@ -1,5 +1,7 @@
 Accounts = new Meteor.Collection('accounts');
 
+Orders = new Meteor.Collection('orders');
+
 Positions = new Meteor.Collection('positions');
 
 Watchlist = new Meteor.Collection('watchlist');

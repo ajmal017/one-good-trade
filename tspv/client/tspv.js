@@ -20,6 +20,14 @@ Template.layout.events({
     window.location = authUrl;
   },
 
+  'click #syncOrderHistory' : function(e) {
+    var btn = $(e.currentTarget);
+    btn.button('loading');
+    updateOrdersForAllAccounts(function() {
+      btn.button('reset');
+    });
+  },
+
   'click #tester' : function(e) {
     alert(amplify.store('ts_token'));
   }
@@ -231,7 +239,8 @@ function loginTS() {
           amplify.store("ts_userid", data["userid"]);
           amplify.store("ts_refresh_token", data["refresh_token"]);
 
-          window.location = String(window.location).split("?")[0];
+          pullAccounts();
+          //window.location = String(window.location).split("?")[0];
         }
       );
 
@@ -244,10 +253,7 @@ function loginTS() {
 
 
 // Similar to a logout
-function logoutTS() {
-  amplify.store("ts_token",null);
-  window.location = String(window.location).split("?")[0];
-}
+
 
 
 function updateLoginState(token) {
@@ -260,133 +266,6 @@ function updateLoginState(token) {
     $('.authenticated').addClass('hidden');
   }
 }
-
-
-function pullAccounts() {
-  token = amplify.store("ts_token");
-  if (!token) return;
-
-  var url = host + "/users/" + amplify.store("ts_userid") + "/accounts";
-
-  $.ajax(url, {
-    type: "GET",
-    data: {
-      oauth_token: token
-    },
-    error: function(xhr, status, error) {
-      if (error == "Unauthorized") {
-        logoutTS();
-      }
-    },
-    success: function(data) {
-      console.log(data);
-      data.forEach(function(account) {
-        pullAccount(account['Key']);
-      });
-    }
-  });
-}
-
-function pullAccount(accountKey) {
-  token = amplify.store("ts_token");
-  if (!token) return;
-
-  var url = host + "/accounts/" + accountKey + "/balances";
-
-  $.ajax(url, {
-    type: "GET",
-    data: {
-      oauth_token: token
-    },
-    error: function(xhr, status, error) {
-      if (error == "Unauthorized") {
-        logoutTS();
-      }
-    },
-    success: function(data) {
-      var url = host + "/accounts/" + accountKey + "/positions";
-      $.ajax(url, {
-        type: "GET",
-        data: {
-          oauth_token: token
-        },
-        error: function(xhr, status, error) {
-          if (error == "Unauthorized") {
-            logoutTS();
-          }
-        },
-        success: function(positions) {
-          positions.forEach(function(pos){
-            addPositionToAccount(pos, data[0]);
-          })
-          Meteor.call("replaceAccount", data[0]);
-        }
-      });
-    }
-  });
-}
-
-// NOTE: CURRENTLY UNUSED
-function pullPositions() {
-  var url = host + "/users/" + amplify.store("ts_userid") + "/positions";
-
-  $.ajax(url, {
-    type: "GET",
-    data: {
-      oauth_token: token
-    },
-    error: function(xhr, status, error) {
-      console.log(xhr);
-      console.log(status);
-      console.log(error);
-    },
-    success: function(data) {
-      Meteor.call("replacePositions", data);
-    }
-  });
-}
-
-
-// adding a position to account. we're doing some collation here because
-// the positions are organized by symbols
-// Format of a symbol:
-// {
-//   Symbol : XLK,
-//   Description : "S&P Sel Technology Spdr Fund",
-//   Positions : [ <position> ]
-// }
-function addPositionToAccount(pos, account) {
-  if (!account.Symbols)
-    account.Symbols = [];
-
-  // grab just the actual stock symbol, ignore the options bit
-  var shortSymbol = pos.Symbol.split(" ")[0];
-  var hasExisting = false;
-
-  // check if we have same symbol
-  for (var i=0; i < account.Symbols.length; i++) {
-    var symbol = account.Symbols[i];
-    if (symbol.Symbol == shortSymbol) {
-      if (!symbol.Positions)
-        symbol.Positions = [];
-      symbol.Positions.push(pos);
-      hasExisting = true;
-      break;
-    }
-  }
-
-  // if we didn't find existing
-  if (!hasExisting) {
-    symbol = {
-      Symbol : shortSymbol,
-      Description : pos.Description,
-      Positions : []
-    }
-    symbol.Positions.push(pos);
-    account.Symbols.push(symbol);
-  }
-}
-
 
 
 // TradeStation HTML Features //

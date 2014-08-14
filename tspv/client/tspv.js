@@ -239,8 +239,7 @@ function loginTS() {
           amplify.store("ts_userid", data["userid"]);
           amplify.store("ts_refresh_token", data["refresh_token"]);
 
-          pullAccounts();
-          //window.location = String(window.location).split("?")[0];
+          window.location = String(window.location).split("?")[0];
         }
       );
 

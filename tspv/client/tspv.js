@@ -1,8 +1,3 @@
-Meteor.subscribe('accounts');
-Meteor.subscribe('positions');
-Meteor.subscribe('watchlist');
-Meteor.subscribe('weeklies');
-
 Template.layout.rendered = function() {
   if (!this.rendered) {
     this.rendered = true;
@@ -46,9 +41,12 @@ Template.layout.helpers({
   isBondsCommodities: function() {
    return "bondsCommodities" == Session.get("activePage");
   },
-  isMonthlies: function() {
-   return "monthlies" == Session.get("activePage");
+  isWeeklies: function() {
+   return "weeklies" == Session.get("activePage");
   },
+  isPnl: function() {
+    return "pnl" == Session.get("activePage");
+  }
 })
 
 Template.account.helpers({

@@ -26,6 +26,10 @@ if (Meteor.isServer) {
 
   Meteor.publish('weeklies', function() {
     return Weeklies.find();
+  });
+
+  Meteor.publish('orders', function() {
+    return Orders.find();
   })
 }
 

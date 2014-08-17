@@ -1,0 +1,25 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "tspv/app"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "tspv/collections"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "tspv/client"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "tspv/lib"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "tspv/server"
+		}
+	]
+}

@@ -13,6 +13,12 @@ Router.map(function () {
   this.route('accountList', {
     path: '/',
     template: 'accountList',
+    waitOn: function() {
+      return [
+        Meteor.subscribe('accounts'),
+        Meteor.subscribe('positions')
+      ]
+    },
     onRun: function() {
       Session.set("activePage", "accountList");
     },
@@ -21,6 +27,11 @@ Router.map(function () {
   this.route('watchlist', {
     path: '/watchlist',
     template: 'watchlist',
+    waitOn: function() {
+      return [
+        Meteor.subscribe('watchlist'),
+      ]
+    },
     onRun: function() {
       Session.set("activePage", "watchlist");
     },
@@ -45,9 +56,22 @@ Router.map(function () {
   this.route('weeklies', {
     path: '/weeklies',
     template: 'weeklies',
+    waitOn: function() {
+      return [
+        Meteor.subscribe('weeklies'),
+      ]
+    },
     onRun: function() {
       Session.set("activePage", "weeklies");
     },
+  });
+
+  this.route('pnl', {
+    path: '/pnl',
+    template: 'pnl',
+    onRun: function() {
+      Session.set("activePage", "pnl");
+    }
   });
 });
 

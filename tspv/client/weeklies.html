@@ -1,0 +1,14 @@
+<template name="weeklies">
+  <div class="post">
+    <h3 style="margin-right: 15px;" class="pull-left">Weeklies</h3>
+
+    <form class="form-inline" style="margin-top: 18px;" role="form">
+        <button type="button" class="btn btn-default btn-success" id="getWeeklies">Refresh Weeklies</button>
+    </form>
+    <hr />
+
+    {{#each weeklies}}
+      {{> watchlistSymbol}}
+    {{/each}}
+  </div>
+</template>

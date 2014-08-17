@@ -12,7 +12,8 @@ Template.sectorEtfs.helpers({
       {Symbol:"XLV"},
       {Symbol:"XLU"},
       {Symbol:"XLF"},
-      {Symbol:"VNQ"},
+      {Symbol:"IYR"},
+      {Symbol:"IYZ"}
     ];
   }
 });

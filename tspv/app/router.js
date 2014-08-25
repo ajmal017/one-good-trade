@@ -69,6 +69,13 @@ Router.map(function () {
   this.route('pnl', {
     path: '/pnl',
     template: 'pnl',
+    waitOn: function() {
+      return [
+        Meteor.subscribe('accounts'),
+        Meteor.subscribe('positions'),
+        Meteor.subscribe('orders'),
+      ]
+    },
     onRun: function() {
       Session.set("activePage", "pnl");
     }

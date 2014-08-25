@@ -1,2 +1,40 @@
 <template name="pnl">
+
+<table class="table table-condensed" style="width: 95%; margin: 15px;">
+<thead><tr>
+  <th>OrderID</th>
+  <th>Symbol</th>
+  <th>Legs</th>
+  <th>Type</th>
+  <th>Filled Price</th>
+  <th>Quantity</th>
+</tr></thead>
+
+<tbody>
+{{#each orders}}
+  {{> orderDetails}}
+{{/each}}
+</tbody>
+</table>
+</template>
+
+<template name="orderDetails">
+<tr>
+  <td>{{OrderID}}</td>
+  <td>{{Symbol}}</td>
+  <td>
+    {{#each Legs}}
+      {{> orderLeg}}
+    {{/each}}
+  </td>
+  <td>{{Type}} - {{Status}}</td>
+  <td>{{FilledPriceText}}</td>
+  <td>{{Quantity}} / {{QuantityLeft}}</td>
+</tr>
+</template>
+
+<template name="orderLeg">
+<div>
+  {{BaseSymbol}}/{{Symbol}}, {{Side}}
+</div>
 </template>

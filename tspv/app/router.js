@@ -19,8 +19,9 @@ Router.map(function () {
         Meteor.subscribe('positions')
       ]
     },
-    onRun: function() {
+    onBeforeAction: function() {
       Session.set("activePage", "accountList");
+      this.next();
     },
   });
 
@@ -32,24 +33,27 @@ Router.map(function () {
         Meteor.subscribe('watchlist'),
       ]
     },
-    onRun: function() {
+    onBeforeAction: function() {
       Session.set("activePage", "watchlist");
+      this.next();
     },
   });
 
   this.route('sectorEtfs', {
     path: '/sectorEtfs',
     template: 'sectorEtfs',
-    onRun: function() {
+    onBeforeAction: function() {
       Session.set("activePage", "sectorEtfs");
+      this.next();
     },
   });
 
   this.route('bondsCommodities', {
     path: '/bondsCommodities',
     template: 'bondsCommodities',
-    onRun: function() {
+    onBeforeAction: function() {
       Session.set("activePage", "bondsCommodities");
+      this.next();
     },
   });
 
@@ -61,8 +65,9 @@ Router.map(function () {
         Meteor.subscribe('weeklies'),
       ]
     },
-    onRun: function() {
+    onBeforeAction: function() {
       Session.set("activePage", "weeklies");
+      this.next();
     },
   });
 
@@ -76,8 +81,9 @@ Router.map(function () {
         Meteor.subscribe('orders'),
       ]
     },
-    onRun: function() {
+    onBeforeAction: function() {
       Session.set("activePage", "pnl");
+      this.next();
     }
   });
 });

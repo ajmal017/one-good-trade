@@ -6,7 +6,12 @@
 standard-app-packages
 insecure
 http
-iron-router
-bootstrap-3
 amplify
-npm
+iron:router
+meteorhacks:npm
+
+
+npm-container
+dsyko:node-csv-npm
+mizzao:bootstrap-3
+

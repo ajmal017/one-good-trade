@@ -1,7 +1,7 @@
-Cheerio = Meteor.require('cheerio');
+Cheerio = Meteor.npmRequire('cheerio');
 cheerio = new Cheerio();
 
-moment = Meteor.require('moment');
+moment = Meteor.npmRequire('moment');
 
 Meteor.methods({
   getNextEarningDate: function(symbol) {

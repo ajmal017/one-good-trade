@@ -164,6 +164,53 @@ Template.symbolPosition.helpers({
 });
 
 Template.symbol.helpers({
+  underlying: function() {
+    var stock_price = Session.get("stockticker_" + data["symbol"]);
+    return stock_price;
+  },
+
+  strategy: function() {
+    // first check if positions are all options
+    var allOptions = true;
+    this.Positions.forEach(function(position) {
+      var parts = position.Symbol.split(" "); // TODO centralize this
+      if (parts.length == 1)
+        allOptions = false;
+    });
+
+    if (!allOptions) {
+      return "Mixed Stock";
+    }
+    else {
+      if (this.Positions.length == 1) {
+        var data = getOptionDataFromSymbol(this.Positions[0].Symbol);
+        if (data['type'] == 'C')
+          return "Straight Call";
+        else if (data['type'] == 'P')
+          return "Straight Put";
+        else
+          return "Unsupported";
+      }
+      else if (this.Positions.length == 2) {
+        var pos1 = getOptionDataFromSymbol(this.Positions[0].Symbol);
+        var pos2 = getOptionDataFromSymbol(this.Positions[1].Symbol);
+
+        if (pos1["exp"].getTime() == pos2["exp"].getTime()) {
+          return "Vertical";
+        }
+        else if (pos1["strike"] == pos2["strike"]) {
+          return "Horizontal";
+        }
+        else {
+          return "Diagonal";
+        }
+      }
+      else {
+        return "Options, Unsupported";
+      }
+    }
+  },
+
   currentTimestamp: function() {
     return (new Date()).getTime();
   },

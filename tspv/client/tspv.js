@@ -5,7 +5,7 @@ Template.layout.rendered = function() {
     loginTS();
 
     // Calls refresh every minute
-    ts_setting.refreshID = setInterval( refreshTS, 120000);
+    //ts_setting.refreshID = setInterval( refreshTS, 120000);
   }
 };
 
@@ -85,7 +85,7 @@ Template.symbolPosition.helpers({
     var strike_price = data["strike"];
 
     var old_price = Session.get("stockticker_" + data["symbol"]);
-    var age = Session.get("stockticker_age_" + data["symbol"]);
+    var age = Session.get("stockticker_checked_on_" + data["symbol"]);
     var now = new Date();
 
     if (now - age < 60 * 1000) {
@@ -127,7 +127,7 @@ Template.symbolPosition.helpers({
     var strike_price = data["strike"];
 
     var old_price = Session.get("stockticker_" + data["symbol"]);
-    var age = Session.get("stockticker_age_" + data["symbol"]);
+    var age = Session.get("stockticker_checked_on_" + data["symbol"]);
     var now = new Date();
 
     // cache for 1 min
@@ -165,8 +165,26 @@ Template.symbolPosition.helpers({
 
 Template.symbol.helpers({
   underlying: function() {
+    var data = getOptionDataFromSymbol(this.Positions[0].Symbol);
     var stock_price = Session.get("stockticker_" + data["symbol"]);
     return stock_price;
+  },
+
+  ATR: function() {
+    var data = getOptionDataFromSymbol(this.Positions[0].Symbol);
+    var today = getToday();
+    var old_atr = Session.get("stockticker_atr_" + data["symbol"]);
+    var age = Session.get("stockticker_atr_checked_on_" + data["symbol"]);
+    var now = new Date();
+
+    if (now - age < 60 * 1000) {
+      var atr = old_atr;
+      return atr;
+    }
+    else {
+      getStockATR(data["symbol"]);
+      return "...";
+    }
   },
 
   strategy: function() {

@@ -46,7 +46,7 @@ getStockATR = function(symbol) {
   pendingStocks.push(symbol);
   Session.set("stockticker_atr_pending_list", pendingStocks);
 
-  var url = '***REMOVED***' + "http://finviz.com/quote.ashx?t=" + symbol;
+  var url = _proxyUrl + "http://finviz.com/quote.ashx?t=" + symbol;
   HTTP.call("GET", url, function(err, result) {
     var regex = new RegExp('ATR</td><td width="8%" class="snapshot-td2" align="left"><b>([0-9.]*)</b></td>');
     var atr = regex.exec(result.content);

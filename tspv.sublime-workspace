@@ -156,28 +156,49 @@
 			}
 		},
 		{
-			"contents": "Searching 27 files for \"template.symbolPosition\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.js:\n   68  }\n   69  \n   70: Template.symbolPosition.helpers({\n   71    isOption: function() {\n   72      var parts = this.Symbol.split(\" \");\n\n1 match in 1 file\n",
+			"contents": "Searching 27 files for \"template.symbolPosition\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.js:\n   68  }\n   69  \n   70: Template.symbolPosition.helpers({\n   71    isOption: function() {\n   72      var parts = this.Symbol.split(\" \");\n\n1 match in 1 file\n\n\nSearching 27 files for \"stockchart.com\"\n\n0 matches\n\nSearching 27 files for \"stockchart\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n   83  <template name=\"chart\">\n   84  <div style=\"width: 360px; display: inline-block; float: left;\">\n   85: <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   86: <img class=\"charts\" src=\"http://stockcharts.com/c-sc/sc?r=143680&chart={{Symbol}},uu[350,a]dacayaci[pb20!b50][dg]&ts={{currentTimestamp}}\" />\n   87  </a>\n   88  {{> earnings}}\n   ..\n   92  <template name=\"symbol\">\n   93  <div style=\"width: 360px; display: inline-block; float: left;\">\n   94: <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   95: <img class=\"charts\" src=\"http://stockcharts.com/c-sc/sc?r=143680&chart={{Symbol}},uu[350,a]dacayaci[pb20!b50][dg]&ts={{currentTimestamp}}\" />\n   96  </a>\n   97  {{strategy}} {{underlying}}\n\n/walkingideas/TradeStationPositionView/tspv/client/watchlist.html:\n   37    <br />\n   38  </div>\n   39: <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   40: <img class=\"charts\" src=\"http://stockcharts.com/c-sc/sc?r=143680&chart={{Symbol}},uu[350,a]dacayaci[pb20!b50][dg]&ts={{currentTimestamp}}\" />\n   41  </a>\n   42  </div>\n\n6 matches across 2 files\n\n\nSearching 27 files for \"stockcharts.com\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n   83  <template name=\"chart\">\n   84  <div style=\"width: 360px; display: inline-block; float: left;\">\n   85: <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   86: <img class=\"charts\" src=\"http://http://gnomepods-1574399552.us-east-1.elb.amazonaws.com:9090/http://stockcharts.com/c-sc/sc?r=143680&chart={{Symbol}},uu[350,a]dacayaci[pb20!b50][dg]&ts={{currentTimestamp}}\" />\n   87  </a>\n   88  {{> earnings}}\n   ..\n   92  <template name=\"symbol\">\n   93  <div style=\"width: 360px; display: inline-block; float: left;\">\n   94: <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   95: <img class=\"charts\" src=\"http://http://gnomepods-1574399552.us-east-1.elb.amazonaws.com:9090/http://stockcharts.com/c-sc/sc?r=143680&chart={{Symbol}},uu[350,a]dacayaci[pb20!b50][dg]&ts={{currentTimestamp}}\" />\n   96  </a>\n   97  {{strategy}} {{underlying}}\n\n/walkingideas/TradeStationPositionView/tspv/client/watchlist.html:\n   37    <br />\n   38  </div>\n   39: <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   40: <img class=\"charts\" src=\"http://stockcharts.com/c-sc/sc?r=143680&chart={{Symbol}},uu[350,a]dacayaci[pb20!b50][dg]&ts={{currentTimestamp}}\" />\n   41  </a>\n   42  </div>\n\n6 matches across 2 files\n\n\nSearching 27 files for \"stockcharts.com\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n   83  <template name=\"chart\">\n   84  <div style=\"width: 360px; display: inline-block; float: left;\">\n   85: <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   86: <img class=\"charts\" src=\"http://http://gnomepods-1574399552.us-east-1.elb.amazonaws.com:9090/http://stockcharts.com/c-sc/sc?r=143680&chart={{Symbol}},uu[350,a]dacayaci[pb20!b50][dg]&ts={{currentTimestamp}}\" />\n   87  </a>\n   88  {{> earnings}}\n   ..\n   92  <template name=\"symbol\">\n   93  <div style=\"width: 360px; display: inline-block; float: left;\">\n   94: <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   95: <img class=\"charts\" src=\"http://http://gnomepods-1574399552.us-east-1.elb.amazonaws.com:9090/http://stockcharts.com/c-sc/sc?r=143680&chart={{Symbol}},uu[350,a]dacayaci[pb20!b50][dg]&ts={{currentTimestamp}}\" />\n   96  </a>\n   97  {{strategy}} {{underlying}}\n\n/walkingideas/TradeStationPositionView/tspv/client/watchlist.html:\n   37    <br />\n   38  </div>\n   39: <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   40: <img class=\"charts\" src=\"http://gnomepods-1574399552.us-east-1.elb.amazonaws.com:9090/http://stockcharts.com/c-sc/sc?r=143680&chart={{Symbol}},uu[350,a]dacayaci[pb20!b50][dg]&ts={{currentTimestamp}}\" />\n   41  </a>\n   42  </div>\n\n6 matches across 2 files\n",
 			"settings":
 			{
-				"buffer_size": 266,
+				"buffer_size": 4333,
 				"line_ending": "Unix",
 				"name": "Find Results",
 				"scratch": true
 			}
 		},
 		{
+			"file": "tspv/client/watchlist.html",
+			"settings":
+			{
+				"buffer_size": 1625,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "tspv/client/tspv.html",
+			"settings":
+			{
+				"buffer_size": 3892,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "tspv/client/tspv.js",
 			"settings":
 			{
-				"buffer_size": 8137,
+				"buffer_size": 8663,
 				"line_ending": "Unix"
 			}
 		}
 	],
 	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
 	"command_palette":
 	{
 		"height": 347.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -387,6 +408,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"stockcharts.com",
+			"stockchart",
+			"stockchart.com",
 			"template.symbol.",
 			"template.s",
 			"symbol.helper",
@@ -511,10 +535,7 @@
 			"\"getAppOnOffKeywords\"",
 			"appComparison_1_keywords",
 			"app1_onOffPage",
-			"\"keywordTableItem\"",
-			"keywordTableItem",
-			"keyword",
-			"canmake"
+			"\"keywordTableItem\""
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -533,7 +554,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -566,7 +587,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -574,7 +595,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 266,
+						"buffer_size": 4333,
 						"regions":
 						{
 							"match":
@@ -585,6 +606,78 @@
 									[
 										134,
 										157
+									],
+									[
+										560,
+										570
+									],
+									[
+										638,
+										648
+									],
+									[
+										930,
+										940
+									],
+									[
+										1008,
+										1018
+									],
+									[
+										1302,
+										1312
+									],
+									[
+										1380,
+										1390
+									],
+									[
+										1789,
+										1804
+									],
+									[
+										1935,
+										1950
+									],
+									[
+										2227,
+										2242
+									],
+									[
+										2373,
+										2388
+									],
+									[
+										2667,
+										2682
+									],
+									[
+										2745,
+										2760
+									],
+									[
+										3154,
+										3169
+									],
+									[
+										3300,
+										3315
+									],
+									[
+										3592,
+										3607
+									],
+									[
+										3738,
+										3753
+									],
+									[
+										4032,
+										4047
+									],
+									[
+										4171,
+										4186
 									]
 								],
 								"scope": ""
@@ -593,8 +686,8 @@
 						"selection":
 						[
 							[
-								153,
-								153
+								3304,
+								3304
 							]
 						],
 						"settings":
@@ -705,7 +798,7 @@
 							"detect_indentation": false,
 							"incomplete_sync": null,
 							"line_numbers": false,
-							"output_tag": 1,
+							"output_tag": 5,
 							"result_base_dir": "",
 							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
 							"result_line_regex": "^ +([0-9]+):",
@@ -715,7 +808,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1425.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -723,19 +816,79 @@
 				},
 				{
 					"buffer": 2,
-					"file": "tspv/client/tspv.js",
+					"file": "tspv/client/watchlist.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8137,
+						"buffer_size": 1625,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4845,
-								4845
+								1422,
+								1422
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 86.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "tspv/client/tspv.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3892,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2641,
+								2641
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1062.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "tspv/client/tspv.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8663,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -853,10 +1006,10 @@
 							"word_separators": "/\\()\"'-:,;<>~!@#$%^&*|+=[]{}`~?"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2362.0,
+						"translation.y": 4826.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -905,6 +1058,7 @@
 	{
 		"height": 100.0
 	},
+	"pinned_build_system": "",
 	"project": "tspv.sublime-project",
 	"replace":
 	{
@@ -914,6 +1068,7 @@
 	"select_file":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -1434,6 +1589,7 @@
 	"select_project":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -1442,6 +1598,7 @@
 	"select_symbol":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],

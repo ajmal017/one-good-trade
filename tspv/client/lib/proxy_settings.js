@@ -1,0 +1,1 @@
+_proxyUrl = "";  // URL for your own proxy server

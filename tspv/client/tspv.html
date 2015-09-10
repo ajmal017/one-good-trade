@@ -83,7 +83,7 @@
 <template name="chart">
 <div style="width: 360px; display: inline-block; float: left;">
 <a target="_blank" href="http://stockcharts.com/h-sc/ui?s={{Symbol}}">
-<img class="charts" src="***REMOVED***http://stockcharts.com/c-sc/sc?r=143680&chart={{Symbol}},uu[350,a]dacayaci[pb20!b50][dg]&ts={{currentTimestamp}}" />
+<img class="charts" src="{{proxyUrl}}http://stockcharts.com/c-sc/sc?r=143680&chart={{Symbol}},uu[350,a]dacayaci[pb20!b50][dg]&ts={{currentTimestamp}}" />
 </a>
 {{> earnings}}
 </div>
@@ -92,7 +92,7 @@
 <template name="symbol">
 <div style="width: 360px; display: inline-block; float: left;">
 <a target="_blank" href="http://stockcharts.com/h-sc/ui?s={{Symbol}}">
-<img class="charts" src="***REMOVED***http://stockcharts.com/c-sc/sc?r=143680&chart={{Symbol}},uu[350,a]dacayaci[pb20!b50][dg]&ts={{currentTimestamp}}" />
+<img class="charts" src="{{proxyUrl}}http://stockcharts.com/c-sc/sc?r=143680&chart={{Symbol}},uu[350,a]dacayaci[pb20!b50][dg]&ts={{currentTimestamp}}" />
 </a>
 {{strategy}} {{underlying}}
 ATR: {{ATR}}

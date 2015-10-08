@@ -1,36 +1,21 @@
 Template.layout.rendered = function() {
   if (!this.rendered) {
     this.rendered = true;
-
-    loginTS();
-
-    // Calls refresh every minute
-    //ts_setting.refreshID = setInterval( refreshTS, 120000);
   }
 };
 
 Template.layout.events({
-  'click #navAuthenticate' : function(e) {
-    authUrl = getTSLoginUrl();
-    window.location = authUrl;
-  },
-
-  'click #syncOrderHistory' : function(e) {
-    var btn = $(e.currentTarget);
-    btn.button('loading');
-    updateOrdersForAllAccounts(function() {
-      btn.button('reset');
-    });
-  },
-
   'click #tester' : function(e) {
     alert(amplify.store('ts_token'));
   }
 });
 
 Template.layout.helpers({
-  isAccountList: function() {
-   return "accountList" == Session.get("activePage");
+  isAccountListTS: function() {
+   return "accountListTS" == Session.get("activePage");
+  },
+  isAccountListIB: function() {
+   return "accountListIB" == Session.get("activePage");
   },
   isWatchlist: function() {
    return "watchlist" == Session.get("activePage");
@@ -55,14 +40,30 @@ Template.account.helpers({
   },
 })
 
-Template.accountList.helpers({
+Template.accountListTS.helpers({
   accounts: function() {
     return Accounts.find();
   },
 });
 
+Template.accountListTS.events({
+  'click #navAuthenticate' : function(e) {
+    authUrl = getTSLoginUrl();
+    window.location = authUrl;
+  },
 
-Template.accountList.rendered = function() {
+  'click #syncOrderHistory' : function(e) {
+    var btn = $(e.currentTarget);
+    btn.button('loading');
+    updateOrdersForAllAccounts(function() {
+      btn.button('reset');
+    });
+  },
+
+})
+
+
+Template.accountListTS.rendered = function() {
   pullAccounts();
   accountList_refresh = setInterval( refreshCharts, 15000);
 }
@@ -76,11 +77,22 @@ Template.symbolPosition.helpers({
       return false;
   },
 
+  FormattedSymbol: function() {
+    var data = getOptionDataFromSymbol(this.Symbol);
+
+    if (data["type"]) {
+      return data["type"] + data["strike"] + "  [" + moment(data["exp"]).format("YYYY-MM-DD") + "]";
+    }
+    else {
+      return this.Symbol;
+    }
+  },
+
   Delta: function() {
     var data = getOptionDataFromSymbol(this.Symbol);
     var today = getToday();
     var date_delta = daysBetween(today, data["exp"]);
-    var option_price = (this.AskPrice + this.BidPrice) / 2;
+    var option_price = parseFloat(this.MarketPrice); //(this.AskPrice + this.BidPrice) / 2;
     var stock_price = Session.get("stockticker_" + data["symbol"]);
     var strike_price = data["strike"];
 
@@ -123,7 +135,7 @@ Template.symbolPosition.helpers({
     var data = getOptionDataFromSymbol(this.Symbol);
     var today = getToday();
     var date_delta = daysBetween(today, data["exp"]);
-    var option_price = (this.AskPrice + this.BidPrice) / 2;
+    var option_price = parseFloat(this.MarketPrice); //x(this.AskPrice + this.BidPrice) / 2;
     var strike_price = data["strike"];
 
     var old_price = Session.get("stockticker_" + data["symbol"]);

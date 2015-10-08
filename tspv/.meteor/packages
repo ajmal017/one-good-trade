@@ -11,7 +11,11 @@ iron:router
 meteorhacks:npm
 
 
-npm-container
 dsyko:node-csv-npm
 mizzao:bootstrap-3
 
+standard-minifiers
+
+
+npm-container
+peerlibrary:xml2js

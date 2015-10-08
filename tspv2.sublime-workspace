@@ -1,0 +1,408 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "Searching 27 files for \"walkingideas.com\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n   84  <div style=\"width: 360px; display: inline-block; float: left;\">\n   85  <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   86: <img class=\"charts\" src=\"http://walkingideas.com/z/proxy.php?url=http%3A%2F%2Fstockcharts.com%2Fc-sc%2Fsc%3Fr%3D143680%26chart%3D{{Symbol}}%2Cuu%5B350%2Ca%5Ddacayaci%5Bpb20!b50%5D%5Bdg%5D&ts={{currentTimestamp}}\" />\n   87  </a>\n   88  {{> earnings}}\n   ..\n   93  <div style=\"width: 360px; display: inline-block; float: left;\">\n   94  <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   95: <img class=\"charts\" src=\"http://walkingideas.com/z/proxy.php?url=http%3A%2F%2Fstockcharts.com%2Fc-sc%2Fsc%3Fr%3D143680%26chart%3D{{Symbol}}%2Cuu%5B350%2Ca%5Ddacayaci%5Bpb20!b50%5D%5Bdg%5D&ts={{currentTimestamp}}\" />\n   96  </a>\n   97  {{strategy}} {{underlying}}\n\n/walkingideas/TradeStationPositionView/tspv/client/watchlist.html:\n   38  </div>\n   39  <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   40: <img class=\"charts\" src=\"http://walkingideas.com/z/proxy.php?url=http%3A%2F%2Fstockcharts.com%2Fc-sc%2Fsc%3Fr%3D143680%26chart%3D{{Symbol}}%2Cuu%5B350%2Ca%5Ddacayaci%5Bpb20!b50%5D%5Bdg%5D&ts={{currentTimestamp}}\" />\n   41  </a>\n   42  </div>\n\n3 matches across 2 files\n\n\nSearching 27 files for \"walkingideas.com\"\n\n/walkingideas/TradeStationPositionView/tspv/client/watchlist.html:\n   38  </div>\n   39  <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   40: <img class=\"charts\" src=\"http://walkingideas.com/z/proxy.php?url=http%3A%2F%2Fstockcharts.com%2Fc-sc%2Fsc%3Fr%3D143680%26chart%3D{{Symbol}}%2Cuu%5B350%2Ca%5Ddacayaci%5Bpb20!b50%5D%5Bdg%5D&ts={{currentTimestamp}}\" />\n   41  </a>\n   42  </div>\n\n1 match in 1 file\n",
+			"settings":
+			{
+				"buffer_size": 1843,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "tspv/client/watchlist.html",
+			"settings":
+			{
+				"buffer_size": 1564,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "tspv/client/tspv.html",
+			"settings":
+			{
+				"buffer_size": 3770,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/walkingideas/TradeStationPositionView/tspv/app",
+		"/walkingideas/TradeStationPositionView/tspv/client",
+		"/walkingideas/TradeStationPositionView/tspv/collections",
+		"/walkingideas/TradeStationPositionView/tspv/lib",
+		"/walkingideas/TradeStationPositionView/tspv/server"
+	],
+	"file_history":
+	[
+		"/Users/mantle/Desktop/Oakland Warriors"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"walkingideas.com",
+			"setUserAdminFlag:",
+			"app type",
+			"optimizeKeyword_keywordData",
+			"\"row\"",
+			"form-control",
+			"\"row\"",
+			"currentap",
+			"admin?"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1843,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										293,
+										309
+									],
+									[
+										705,
+										721
+									],
+									[
+										1135,
+										1151
+									],
+									[
+										1614,
+										1630
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								1621,
+								1621
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 2,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 570.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "tspv/client/watchlist.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1564,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1534,
+								1534
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 87.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "tspv/client/tspv.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3770,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3256,
+								3256
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1191.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "tspv2.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"keywordexper",
+				"client/views/appResearchKeywordExperiment.js"
+			],
+			[
+				"appresearcht",
+				"client/views/appResearchTrending.html"
+			],
+			[
+				"admindash",
+				"client/views/admin/adminDashboard.html"
+			],
+			[
+				"apptypetre",
+				"client/views/appResearchAppTypeTrending.html"
+			],
+			[
+				"trending.h",
+				"client/views/appResearchTrending.html"
+			],
+			[
+				"apptypetr",
+				"client/views/appResearchAppTypeTrending.html"
+			],
+			[
+				"keywordtrans",
+				"client/views/appResearchKeywordTranslation.html"
+			],
+			[
+				"keywordopt",
+				"client/views/appResearchKeywordOptimization.js"
+			],
+			[
+				"keywordop",
+				"client/views/appResearchKeywordOptimization.html"
+			],
+			[
+				"keywordoptimi",
+				"client/views/appResearchKeywordOptimization.js"
+			],
+			[
+				"router",
+				"client/router.js"
+			],
+			[
+				"css",
+				"client/stylesheets/style.css"
+			],
+			[
+				"trending.js",
+				"client/views/appResearchAppTypeTrending.js"
+			],
+			[
+				"trending",
+				"client/views/appResearchTrending.html"
+			],
+			[
+				"appresearchkeywordtr",
+				"client/views/appResearchKeywordTranslation.html"
+			],
+			[
+				"main.h",
+				"client/main.html"
+			],
+			[
+				"main",
+				"client/main.js"
+			],
+			[
+				"admindas",
+				"client/views/admin/adminDashboard.html"
+			],
+			[
+				"start",
+				"client/lib/startup.js"
+			],
+			[
+				"init",
+				"server/lib/init.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 134.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

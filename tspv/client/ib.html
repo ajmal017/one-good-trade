@@ -1,0 +1,11 @@
+<template name="accountListIB">
+<div class="pull-right">
+<button class="btn btn-success" id="syncAccountBtn">Sync Account</button>
+</div>
+<h3>IB Accounts</h3>
+  <div class="post">
+    {{#each positions}}
+      {{> symbol}}
+    {{/each}}
+  </div>
+</template>

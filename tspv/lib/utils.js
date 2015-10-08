@@ -91,3 +91,28 @@ daysBetween = function(startDate, endDate) {
     var millisecondsPerDay = 24 * 60 * 60 * 1000;
     return (treatAsUTC(endDate) - treatAsUTC(startDate)) / millisecondsPerDay;
 }
+
+// takes CSV, assumes first line is column name, returns array of associative obj
+parseCSV = function(csv) {
+  var lines = csv.split("\n");
+  var header = lines[0];
+  var columns = header.split(",");
+  columns = _.map(columns, function(c) { return c.replace(/"/g,''); });
+
+  var results = [];
+  for(var i=1; i < lines.length; i++) {
+    var result = {};
+    var fields = lines[i].split(",");
+
+    if (fields.length != columns.length) continue;
+
+    fields = _.map(fields, function(f) { return f.replace(/"/g,''); });
+
+    for(var j=0; j < fields.length; j++) {
+      result[columns[j]] = fields[j];
+    }
+    results.push(result);
+  }
+
+  return results;
+}

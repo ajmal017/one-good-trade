@@ -27,3 +27,13 @@ calculateWeekendDays = function (fromDate, toDate){
 
     return weekendDayCount ;
 }
+
+refreshCharts = function() {
+  console.log("refreshing charts");
+  $("img.charts").each(function(i) {
+    var src = $(this).attr('src');
+    src = src.split("&ts=")[0] + "&ts=" + (new Date()).getTime();
+    $(this).attr('src',src);
+  });
+}
+

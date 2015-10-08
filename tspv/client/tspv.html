@@ -10,7 +10,8 @@
     </div>
 
     <ul class="nav navbar-nav">
-      <li class="{{#if isAccountList}}active{{/if}}"><a href="{{pathFor 'accountList'}}">Portfolio</a></li>
+      <li class="{{#if isAccountListIB}}active{{/if}}"><a href="{{pathFor 'accountListIB'}}">IB</a></li>
+      <li class="{{#if isAccountListTS}}active{{/if}}"><a href="{{pathFor 'accountListTS'}}">TS</a></li>
       <li class="{{#if isWatchlist}}active{{/if}}"><a href="{{pathFor 'watchlist'}}">Watchlist</a></li>
       <li class="{{#if isSectorEtfs}}active{{/if}}"><a href="{{pathFor 'sectorEtfs'}}">Market/Sector</a></li>
       <li class="{{#if isBondsCommodities}}active{{/if}}"><a href="{{pathFor 'bondsCommodities'}}">Bonds/Commodities</a></li>
@@ -19,19 +20,6 @@
     </ul>
 
 		<ul class="nav navbar-nav navbar-right">
-      <li class="authenticated hidden">
-        <button type="button" class="btn btn-default btn-success navbar-btn" id="syncOrderHistory" data-loading-text="Syncing Orders...">Sync Order History</button>
-      </li>
-      <li class="authenticated hidden">
-        <p class="navbar-text">Signed in</p>
-      </li>
-      <li>
-        <button type="button" class="btn btn-default btn-success navbar-btn hidden" id="navAuthenticate">Sync Account</button>
-
-        <!--
-        <button type="button" class="btn btn-default btn-success navbar-btn" id="tester">Print Token</button>
-        -->
-      </li>
     </ul>
 
   </div>
@@ -53,14 +41,28 @@
 
 
 
-<template name="accountList">
+<template name="accountListTS">
+  <div class="pull-right">
+    <span class="authenticated hidden">
+      <button type="button" class="btn btn-default btn-success navbar-btn" id="syncOrderHistory" data-loading-text="Syncing Orders...">Sync Order History</button>
+    </span>
+    <span class="authenticated hidden">
+      <p class="navbar-text">Signed in</p>
+    </span>
+    <span>
+      <button type="button" class="btn btn-default btn-success navbar-btn hidden" id="navAuthenticate">Sync Account</button>
+
+      <!--
+      <button type="button" class="btn btn-default btn-success navbar-btn" id="tester">Print Token</button>
+      -->
+    </span>
+  </div>
+
   <h3>Portfolio</h3>
 	{{#each accounts}}
 		{{> account}}
 	{{/each}}
 </template>
-
-
 
 <template name="account">
 	<div class="post">
@@ -100,7 +102,6 @@ ATR: {{ATR}}
 {{#each Positions}}
   {{> symbolPosition}}
 {{/each}}
-	<li>P&amp;L: ${{TotalOpenProfitLoss}}</li>
   <li>{{> earnings}}</li>
 </ul>
 </div>
@@ -108,7 +109,7 @@ ATR: {{ATR}}
 
 <template name="symbolPosition">
   <li>
-    {{Symbol}} x {{Quantity}} = ${{AccountMarketValue}}
+    {{FormattedSymbol}} x {{Quantity}}
     {{#if isOption}}
     <br />
       Delta: {{Delta}} |

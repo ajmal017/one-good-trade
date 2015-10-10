@@ -81,7 +81,7 @@ Template.symbolPosition.helpers({
     var data = getOptionDataFromSymbol(this.Symbol);
 
     if (data["type"]) {
-      return data["type"] + data["strike"] + "  [" + moment(data["exp"]).format("YYYY-MM-DD") + "]";
+      return data["type"] + data["strike"] + "  " + moment(data["exp"]).format("YYYYMMDD") + "";
     }
     else {
       return this.Symbol;
@@ -215,9 +215,9 @@ Template.symbol.helpers({
       if (this.Positions.length == 1) {
         var data = getOptionDataFromSymbol(this.Positions[0].Symbol);
         if (data['type'] == 'C')
-          return "Straight Call";
+          return "Call " + data["strike"];
         else if (data['type'] == 'P')
-          return "Straight Put";
+          return "Put " + data["strike"];
         else
           return "Unsupported";
       }
@@ -226,7 +226,54 @@ Template.symbol.helpers({
         var pos2 = getOptionDataFromSymbol(this.Positions[1].Symbol);
 
         if (pos1["exp"].getTime() == pos2["exp"].getTime()) {
-          return "Vertical";
+          if (pos1["strike"] > pos2["strike"]) { // e.g., 80-70
+            if (this.Positions[0].Quantity > 0) { // +80, -70
+              if (pos1["type"] == "C") {
+                return displayVertical("Bear Call", pos1, pos2);
+              }
+              else if (pos1["type"] == "P") {
+                return displayVertical("Bear Put", pos1, pos2);
+              }
+              else {
+                return "Unsupproted Vertical";
+              }
+            }
+            else {
+              if (pos1["type"] == "C") {
+                return displayVertical("Bull Call", pos1, pos2);
+              }
+              else if (pos1["type"] == "P") {
+                return displayVertical("Bull Put", pos1, pos2);
+              }
+              else {
+                return "Unsupproted Vertical";
+              }
+            }
+          }
+          else {
+            if (this.Positions[0].Quantity > 0) { // +80, -70
+              if (pos1["type"] == "C") {
+                return displayVertical("Bull Call", pos1, pos2);
+              }
+              else if (pos1["type"] == "P") {
+                return displayVertical("Bull Put", pos1, pos2);
+              }
+              else {
+                return "Unsupproted Vertical";
+              }
+            }
+            else {
+              if (pos1["type"] == "C") {
+                return displayVertical("Bear Call", pos1, pos2);
+              }
+              else if (pos1["type"] == "P") {
+                return displayVertical("Bear Put", pos1, pos2);
+              }
+              else {
+                return "Unsupproted Vertical";
+              }
+            }
+          }
         }
         else if (pos1["strike"] == pos2["strike"]) {
           return "Horizontal";
@@ -325,6 +372,10 @@ function loginTS() {
   }
 }
 
+function displayVertical(type, pos1, pos2) {
+  return type + " " + pos1["strike"] + "-" + pos2["strike"] + "<br />Exp: " +
+    moment(pos1["exp"]).format("MMMM DD");
+}
 
 // Similar to a logout
 

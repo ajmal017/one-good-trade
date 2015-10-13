@@ -100,11 +100,12 @@ parseCSV = function(csv) {
   columns = _.map(columns, function(c) { return c.replace(/"/g,''); });
 
   var results = [];
-  for(var i=1; i < lines.length; i++) {
+  for(var i=0; i < lines.length; i++) {
     var result = {};
     var fields = lines[i].split(",");
 
     if (fields.length != columns.length) continue;
+    if (fields[0] == '"ClientAccountID"') continue; // used to catch the case of multiple header in CSV (when theres multiple account)
 
     fields = _.map(fields, function(f) { return f.replace(/"/g,''); });
 

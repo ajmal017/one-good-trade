@@ -176,6 +176,26 @@ Template.symbolPosition.helpers({
 });
 
 Template.symbol.helpers({
+  symbolStateCSS : function() {
+    var someExpired = false;
+    var someActive = false;
+    var today = new Date();
+
+    for (var i=0; i < this.Positions.length; i++) {
+      var data = getOptionDataFromSymbol(this.Positions[i].Symbol);
+      if (today > data) {
+        someExpired = true;
+      }
+      else {
+        someActive = true;
+      }
+    }
+
+    if (someExpired && !someActive) {
+      return "expiredSymbol"
+    }
+  },
+
   underlying: function() {
     var data = getOptionDataFromSymbol(this.Positions[0].Symbol);
     var stock_price = Session.get("stockticker_" + data["symbol"]);

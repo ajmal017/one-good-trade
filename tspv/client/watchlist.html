@@ -1,20 +1,24 @@
 <template name="watchlist">
-  <div class="post">
-    <h3 style="margin-right: 15px;" class="pull-left">Watchlist</h3>
+<div class="row">
+  <div class="col-md-12">
+    <div class="block-bg">
+      <h3 style="margin-right: 15px;" class="pull-left">Watchlist</h3>
 
-    <form class="form-inline" style="margin-top: 18px;" role="form">
-        <div class="form-group">
-          <input type="text" id="symbolInput" class="form-control" style="width: 150px;" placeholder="Enter Symbol">
-        </div>
-        <button id="addWatchlist" class="btn btn-default">Add</button>
-    </form>
-    <hr />
+      <form class="form-inline" style="margin-top: 18px;" role="form">
+          <div class="form-group">
+            <input type="text" id="symbolInput" class="form-control" style="width: 150px;" placeholder="Enter Symbol">
+          </div>
+          <button id="addWatchlist" class="btn btn-default">Add</button>
+      </form>
+      <hr />
 
 
-    {{#each watchlist}}
-      {{> watchlistSymbol}}
-    {{/each}}
+      {{#each watchlist}}
+        {{> watchlistSymbol}}
+      {{/each}}
+    </div>
   </div>
+</div>
 </template>
 
 <template name="watchlistSymbol">

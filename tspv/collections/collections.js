@@ -8,6 +8,8 @@ Watchlist = new Meteor.Collection('watchlist');
 
 Weeklies = new Meteor.Collection('weeklies');
 
+Journals = new Meteor.Collection('journals');
+
 // name
 // symbols
 
@@ -30,6 +32,10 @@ if (Meteor.isServer) {
 
   Meteor.publish('orders', function() {
     return Orders.find();
+  })
+
+  Meteor.publish('journals', function() {
+    return Journals.find();
   })
 }
 

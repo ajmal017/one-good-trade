@@ -1,0 +1,17 @@
+- show how many ATR we need this stock to move to get to max gain (for diagonal  vertical)
+- what do we do for straight call? a manually set target?
+
+- get the industry for the given symbol (lookup via finviz)
+
+- get overall bearish/bullish (based on ATR needed & position size)
+-- how to handle position sizing for diagonal?
+-- how to handle position sizing for straight call/put?
+-- how to handle position sizing for butterfly?
+
+- get industry based bearish/bullish ness (based on ATR needed & position size)
+
+- "notes" for each symbol
+--- use case: when trying to do intraday exit, set notes to follow through on
+
+- 
+

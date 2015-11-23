@@ -1,8 +1,12 @@
 <template name="sectorEtfs">
-  <div class="post">
-    <h3>Market/Sector</h3>
-    {{#each symbols}}
-      {{> chart}}
-    {{/each}}
+<div class="row">
+  <div class="col-md-12">
+    <div class="block-bg">
+      <h3>Market/Sector</h3>
+      {{#each symbols}}
+        {{> chart}}
+      {{/each}}
+    </div>
   </div>
+</div>
 </template>

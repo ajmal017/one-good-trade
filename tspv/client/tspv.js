@@ -11,6 +11,12 @@ Template.layout.events({
 });
 
 Template.layout.helpers({
+  isPositions: function() {
+   return "positions" == Session.get("activePage");
+  },
+  isJournal: function() {
+   return "journals" == Session.get("activePage");
+  },
   isAccountListTS: function() {
    return "accountListTS" == Session.get("activePage");
   },
@@ -183,6 +189,7 @@ Template.symbol.helpers({
 
     for (var i=0; i < this.Positions.length; i++) {
       var data = getOptionDataFromSymbol(this.Positions[i].Symbol);
+      console.log(data);
       if (today > data) {
         someExpired = true;
       }
@@ -190,6 +197,9 @@ Template.symbol.helpers({
         someActive = true;
       }
     }
+
+    console.log(this.Positions);
+    console.log(someExpired, someActive);
 
     if (someExpired && !someActive) {
       return "expiredSymbol"

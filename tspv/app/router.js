@@ -10,13 +10,14 @@ Router.map(function () {
    * The route's template is also "appList"
    * The default action will render the appList template
    */
-  this.route('accountListIB', {
+  this.route('positions', {
     path: '/',
-    template: 'accountListIB',
+    template: 'positions',
     waitOn: function() {
       return [
         Meteor.subscribe('accounts'),
-        Meteor.subscribe('positions')
+        Meteor.subscribe('positions'),
+        Meteor.subscribe('journals'),
       ]
     },
     onBeforeAction: function() {
@@ -86,18 +87,16 @@ Router.map(function () {
     },
   });
 
-  this.route('pnl', {
-    path: '/pnl',
-    template: 'pnl',
+  this.route('journals', {
+    path: '/journals',
+    template: 'journals',
     waitOn: function() {
       return [
-        Meteor.subscribe('accounts'),
-        Meteor.subscribe('positions'),
-        Meteor.subscribe('orders'),
+        Meteor.subscribe('journals'),
       ]
     },
     onBeforeAction: function() {
-      Session.set("activePage", "pnl");
+      Session.set("activePage", "journals");
       this.next();
     }
   });

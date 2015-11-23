@@ -18,6 +18,9 @@ Meteor.methods({
     var el = $("b", tbl);
     if (!el) return "N/A";
 
+    var html = el.html();
+    if (!el) return "N/A";
+    
     var parts = el.html().split("\n");
     return parts[parts.length-1]
 

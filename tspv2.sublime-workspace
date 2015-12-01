@@ -8,13 +8,21 @@
 	"buffers":
 	[
 		{
-			"contents": "Searching 27 files for \"walkingideas.com\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n   84  <div style=\"width: 360px; display: inline-block; float: left;\">\n   85  <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   86: <img class=\"charts\" src=\"http://walkingideas.com/z/proxy.php?url=http%3A%2F%2Fstockcharts.com%2Fc-sc%2Fsc%3Fr%3D143680%26chart%3D{{Symbol}}%2Cuu%5B350%2Ca%5Ddacayaci%5Bpb20!b50%5D%5Bdg%5D&ts={{currentTimestamp}}\" />\n   87  </a>\n   88  {{> earnings}}\n   ..\n   93  <div style=\"width: 360px; display: inline-block; float: left;\">\n   94  <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   95: <img class=\"charts\" src=\"http://walkingideas.com/z/proxy.php?url=http%3A%2F%2Fstockcharts.com%2Fc-sc%2Fsc%3Fr%3D143680%26chart%3D{{Symbol}}%2Cuu%5B350%2Ca%5Ddacayaci%5Bpb20!b50%5D%5Bdg%5D&ts={{currentTimestamp}}\" />\n   96  </a>\n   97  {{strategy}} {{underlying}}\n\n/walkingideas/TradeStationPositionView/tspv/client/watchlist.html:\n   38  </div>\n   39  <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   40: <img class=\"charts\" src=\"http://walkingideas.com/z/proxy.php?url=http%3A%2F%2Fstockcharts.com%2Fc-sc%2Fsc%3Fr%3D143680%26chart%3D{{Symbol}}%2Cuu%5B350%2Ca%5Ddacayaci%5Bpb20!b50%5D%5Bdg%5D&ts={{currentTimestamp}}\" />\n   41  </a>\n   42  </div>\n\n3 matches across 2 files\n\n\nSearching 27 files for \"walkingideas.com\"\n\n/walkingideas/TradeStationPositionView/tspv/client/watchlist.html:\n   38  </div>\n   39  <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   40: <img class=\"charts\" src=\"http://walkingideas.com/z/proxy.php?url=http%3A%2F%2Fstockcharts.com%2Fc-sc%2Fsc%3Fr%3D143680%26chart%3D{{Symbol}}%2Cuu%5B350%2Ca%5Ddacayaci%5Bpb20!b50%5D%5Bdg%5D&ts={{currentTimestamp}}\" />\n   41  </a>\n   42  </div>\n\n1 match in 1 file\n\n\nSearching 27 files for \"gnomepod\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n   84  <div style=\"width: 360px; display: inline-block; float: left;\">\n   85  <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   86: <img class=\"charts\" src=\"http://gnomepods-1574399552.us-east-1.elb.amazonaws.com:9090/http://stockcharts.com/c-sc/sc?r=143680&chart={{Symbol}},uu[350,a]dacayaci[pb20!b50][dg]&ts={{currentTimestamp}}\" />\n   87  </a>\n   88  {{> earnings}}\n   ..\n   93  <div style=\"width: 360px; display: inline-block; float: left;\">\n   94  <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   95: <img class=\"charts\" src=\"http://gnomepods-1574399552.us-east-1.elb.amazonaws.com:9090/http://stockcharts.com/c-sc/sc?r=143680&chart={{Symbol}},uu[350,a]dacayaci[pb20!b50][dg]&ts={{currentTimestamp}}\" />\n   96  </a>\n   97  {{strategy}} {{underlying}}\n\n/walkingideas/TradeStationPositionView/tspv/client/lib/scrape.js:\n   47    Session.set(\"stockticker_atr_pending_list\", pendingStocks);\n   48  \n   49:   var url = 'http://gnomepods-1574399552.us-east-1.elb.amazonaws.com:9090/' + \"http://finviz.com/quote.ashx?t=\" + symbol;\n   50    HTTP.call(\"GET\", url, function(err, result) {\n   51      var regex = new RegExp('ATR</td><td width=\"8%\" class=\"snapshot-td2\" align=\"left\"><b>([0-9.]*)</b></td>');\n\n3 matches across 2 files\n\n\nSearching 27 files for \"gnomepod\"\n\n/walkingideas/TradeStationPositionView/tspv/client/lib/scrape.js:\n   47    Session.set(\"stockticker_atr_pending_list\", pendingStocks);\n   48  \n   49:   var url = 'http://gnomepods-1574399552.us-east-1.elb.amazonaws.com:9090/' + \"http://finviz.com/quote.ashx?t=\" + symbol;\n   50    HTTP.call(\"GET\", url, function(err, result) {\n   51      var regex = new RegExp('ATR</td><td width=\"8%\" class=\"snapshot-td2\" align=\"left\"><b>([0-9.]*)</b></td>');\n\n1 match in 1 file\n\n\nSearching 27 files for \"gnomepod\"\n\n/walkingideas/TradeStationPositionView/tspv/client/lib/scrape.js:\n   47    Session.set(\"stockticker_atr_pending_list\", pendingStocks);\n   48  \n   49:   var url = 'http://gnomepods-1574399552.us-east-1.elb.amazonaws.com:9090/' + \"http://finviz.com/quote.ashx?t=\" + symbol;\n   50    HTTP.call(\"GET\", url, function(err, result) {\n   51      var regex = new RegExp('ATR</td><td width=\"8%\" class=\"snapshot-td2\" align=\"left\"><b>([0-9.]*)</b></td>');\n\n1 match in 1 file\n\n\nSearching 27 files for \"proxyUrl\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n   84  <div style=\"width: 360px; display: inline-block; float: left;\">\n   85  <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   86: <img class=\"charts\" src=\"{{proxyUrl}}http://stockcharts.com/c-sc/sc?r=143680&chart={{Symbol}},uu[350,a]dacayaci[pb20!b50][dg]&ts={{currentTimestamp}}\" />\n   87  </a>\n   88  {{> earnings}}\n   ..\n   93  <div style=\"width: 360px; display: inline-block; float: left;\">\n   94  <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   95: <img class=\"charts\" src=\"{{proxyUrl}}http://stockcharts.com/c-sc/sc?r=143680&chart={{Symbol}},uu[350,a]dacayaci[pb20!b50][dg]&ts={{currentTimestamp}}\" />\n   96  </a>\n   97  {{strategy}} {{underlying}}\n\n/walkingideas/TradeStationPositionView/tspv/client/watchlist.html:\n   38  </div>\n   39  <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   40: <img class=\"charts\" src=\"{{proxyUrl}}http://stockcharts.com/c-sc/sc?r=143680&chart={{Symbol}},uu[350,a]dacayaci[pb20!b50][dg]&ts={{currentTimestamp}}\" />\n   41  </a>\n   42  </div>\n\n/walkingideas/TradeStationPositionView/tspv/client/lib/startup.js:\n    1  UI._allowJavascriptUrls()\n    2  \n    3: UI.registerHelper('proxyUrl', function () {\n    4    if (process.env.PROXY_URL) {\n    5      return process.env.PROXY_URL;\n\n4 matches across 3 files\n\n\nSearching 28 files for \"er_atr_pending_list\", pendingStocks);\n\n  var url = process.env.PROXY_URL + \"http://finviz.com/quote.ashx?t=\" + symbol;\n  HTTP.call(\"GET\", url, fun\"\n\n/walkingideas/TradeStationPositionView/tspv/client/lib/scrape.js:\n   45  \n   46    pendingStocks.push(symbol);\n   47:   Session.set(\"stockticker_atr_pending_list\", pendingStocks);\n   48: \n   49:   var url = process.env.PROXY_URL + \"http://finviz.com/quote.ashx?t=\" + symbol;\n   50:   HTTP.call(\"GET\", url, function(err, result) {\n   51      var regex = new RegExp('ATR</td><td width=\"8%\" class=\"snapshot-td2\" align=\"left\"><b>([0-9.]*)</b></td>');\n   52      var atr = regex.exec(result.content);\n\n1 match in 1 file\n\n\nSearching 28 files for \"_proxyUrl\"\n\n/walkingideas/TradeStationPositionView/tspv/client/lib/proxy_settings.js:\n    1: _proxyUrl = \"\";  // URL for your own proxy server\n\n/walkingideas/TradeStationPositionView/tspv/client/lib/scrape.js:\n   47    Session.set(\"stockticker_atr_pending_list\", pendingStocks);\n   48  \n   49:   var url = _proxyUrl + \"http://finviz.com/quote.ashx?t=\" + symbol;\n   50    HTTP.call(\"GET\", url, function(err, result) {\n   51      var regex = new RegExp('ATR</td><td width=\"8%\" class=\"snapshot-td2\" align=\"left\"><b>([0-9.]*)</b></td>');\n\n/walkingideas/TradeStationPositionView/tspv/client/lib/startup.js:\n    2  \n    3  UI.registerHelper('proxyUrl', function () {\n    4:   if (_proxyUrl) {\n    5:     return _proxyUrl;\n    6    }\n    7    else {\n\n4 matches across 3 files\n\n\nSearching 28 files for \"Portfolio\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n   11  \n   12      <ul class=\"nav navbar-nav\">\n   13:       <li class=\"{{#if isAccountList}}active{{/if}}\"><a href=\"{{pathFor 'accountList'}}\">Portfolio</a></li>\n   14        <li class=\"{{#if isWatchlist}}active{{/if}}\"><a href=\"{{pathFor 'watchlist'}}\">Watchlist</a></li>\n   15        <li class=\"{{#if isSectorEtfs}}active{{/if}}\"><a href=\"{{pathFor 'sectorEtfs'}}\">Market/Sector</a></li>\n   ..\n   55  \n   56  <template name=\"accountList\">\n   57:   <h3>Portfolio</h3>\n   58  	{{#each accounts}}\n   59  		{{> account}}\n\n2 matches in 1 file\n\n\nSearching 30 files for \"sync account\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n   28        </li>\n   29        <li>\n   30:         <button type=\"button\" class=\"btn btn-default btn-success navbar-btn hidden\" id=\"navAuthenticate\">Sync Account</button>\n   31  \n   32          <!--\n\n1 match in 1 file\n\n\nSearching 30 files for \"IB accounts\"\n\n/walkingideas/TradeStationPositionView/tspv/client/ib.html:\n    1  <template name=\"accountListIB\">\n    2: <h3>IB Accounts</h3>\n    3  </template>\n\n1 match in 1 file\n\n\nSearching 30 files for \"http://\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n   85  <template name=\"chart\">\n   86  <div style=\"width: 360px; display: inline-block; float: left;\">\n   87: <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   88: <img class=\"charts\" src=\"{{proxyUrl}}http://stockcharts.com/c-sc/sc?r=143680&chart={{Symbol}},uu[350,a]dacayaci[pb20!b50][dg]&ts={{currentTimestamp}}\" />\n   89  </a>\n   90  {{> earnings}}\n   ..\n   94  <template name=\"symbol\">\n   95  <div style=\"width: 360px; display: inline-block; float: left;\">\n   96: <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   97: <img class=\"charts\" src=\"{{proxyUrl}}http://stockcharts.com/c-sc/sc?r=143680&chart={{Symbol}},uu[350,a]dacayaci[pb20!b50][dg]&ts={{currentTimestamp}}\" />\n   98  </a>\n   99  {{strategy}} {{underlying}}\n\n/walkingideas/TradeStationPositionView/tspv/client/watchlist.html:\n   37    <br />\n   38  </div>\n   39: <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   40: <img class=\"charts\" src=\"{{proxyUrl}}http://stockcharts.com/c-sc/sc?r=143680&chart={{Symbol}},uu[350,a]dacayaci[pb20!b50][dg]&ts={{currentTimestamp}}\" />\n   41  </a>\n   42  </div>\n\n/walkingideas/TradeStationPositionView/tspv/client/watchlist.js:\n   46    'click .viewTradeIdeas' : function(e) {\n   47      var symbol = e.currentTarget.id.replace(\"viewTradeIdeas_\", \"\");\n   48:     var url = \"http://www.trade-ideas.com/ticky/ticky.html?symbol=\" + symbol;\n   49      window.open(url, \"_blank\");\n   50    }\n\n/walkingideas/TradeStationPositionView/tspv/client/lib/moment.js:\n   39          aspNetTimeSpanJsonRegex = /(\\-)?(?:(\\d*)\\.)?(\\d+)\\:(\\d+)(?:\\:(\\d+)\\.?(\\d{3})?)?/,\n   40  \n   41:         // from http://docs.closure-library.googlecode.com/git/closure_goog_date_date.js.source.html\n   42          // somewhat more in line with 4.4.3.2 2004 spec, but allows decimal anywhere\n   43          isoDurationRegex = /^(-)?P(?:(?:([0-9,.]*)Y)?(?:([0-9,.]*)M)?(?:([0-9,.]*)D)?(?:T(?:([0-9,.]*)H)?(?:([0-9,.]*)M)?(?:([0-9,.]*)S)?)?|([0-9,.]*)W)$/,\n   ..\n  489  \n  490      // left zero fill a number\n  491:     // see http://jsperf.com/left-zero-filling for performance comparison\n  492      function leftZeroFill(number, targetLength, forceSign) {\n  493          var output = '' + Math.abs(number),\n  ...\n 1466      }\n 1467  \n 1468:     // Code from http://stackoverflow.com/questions/3561493/is-there-a-regexp-escape-function-in-javascript\n 1469      function regexpEscape(s) {\n 1470          return s.replace(/[-\\/\\\\^$*+?.()|[\\]{}]/g, '\\\\$&');\n ....\n 1578      function makeDate(y, m, d, h, M, s, ms) {\n 1579          //can't just apply() to create a date:\n 1580:         //http://stackoverflow.com/questions/181348/instantiating-a-javascript-object-by-calling-prototype-constructor-apply\n 1581          var date = new Date(y, m, d, h, M, s, ms);\n 1582  \n ....\n 1681      }\n 1682  \n 1683:     //http://en.wikipedia.org/wiki/ISO_week_date#Calculating_a_date_given_the_year.2C_week_number_and_weekday\n 1684      function dayOfYearFromWeeks(year, week, weekday, firstDayOfWeekOfYear, firstDayOfWeek) {\n 1685          var d = makeUTCDate(year, 0, 1).getUTCDay(), daysToAdd, dayOfYear;\n\n/walkingideas/TradeStationPositionView/tspv/client/lib/pnotify.custom.min.js:\n   37  c.extend(e.styling.bootstrap2,{closer:\"icon-remove\",pin_up:\"icon-pause\",pin_down:\"icon-play\"});c.extend(e.styling.bootstrap3,{closer:\"glyphicon glyphicon-remove\",pin_up:\"glyphicon glyphicon-pause\",pin_down:\"glyphicon glyphicon-play\"});c.extend(e.styling.fontawesome,{closer:\"fa fa-times\",pin_up:\"fa fa-pause\",pin_down:\"fa fa-play\"})});\n   38  (function(e){\"function\"===typeof define&&define.amd?define(\"pnotify.desktop\",[\"jquery\",\"pnotify\"],e):e(jQuery,PNotify)})(function(e,d){var c,f=function(a,b){f=\"Notification\"in window?function(a,b){return new Notification(a,b)}:\"mozNotification\"in navigator?function(a,b){return navigator.mozNotification.createNotification(a,b.body,b.icon).show()}:\"webkitNotifications\"in window?function(a,b){return window.webkitNotifications.createNotification(b.icon,a,b.body)}:function(a,b){return null};return f(a,\n   39: b)};d.prototype.options.desktop={desktop:!1,icon:null,tag:null};d.prototype.modules.desktop={tag:null,icon:null,genNotice:function(a,b){this.icon=null===b.icon?\"http://sciactive.com/pnotify/includes/desktop/\"+a.options.type+\".png\":!1===b.icon?null:b.icon;if(null===this.tag||null!==b.tag)this.tag=null===b.tag?\"PNotify-\"+Math.round(1E6*Math.random()):b.tag;a.desktop=f(a.options.title,{icon:this.icon,body:a.options.text,tag:this.tag});\"close\"in a.desktop||(a.desktop.close=function(){a.desktop.cancel()});\n   40  a.desktop.onclick=function(){a.elem.trigger(\"click\")};a.desktop.onclose=function(){\"closing\"!==a.state&&\"closed\"!==a.state&&a.remove()}},init:function(a,b){b.desktop&&(c=d.desktop.checkPermission(),0==c&&this.genNotice(a,b))},update:function(a,b,d){0==c&&b.desktop&&this.genNotice(a,b)},beforeOpen:function(a,b){0==c&&b.desktop&&a.elem.css({left:\"-10000px\",display:\"none\"})},afterOpen:function(a,b){0==c&&b.desktop&&(a.elem.css({left:\"-10000px\",display:\"none\"}),\"show\"in a.desktop&&a.desktop.show())},\n   41  beforeClose:function(a,b){0==c&&b.desktop&&a.elem.css({left:\"-10000px\",display:\"none\"})},afterClose:function(a,b){0==c&&b.desktop&&(a.elem.css({left:\"-10000px\",display:\"none\"}),a.desktop.close())}};d.desktop={permission:function(){\"undefined\"!==typeof Notification&&\"requestPermission\"in Notification?Notification.requestPermission():\"webkitNotifications\"in window&&window.webkitNotifications.requestPermission()},checkPermission:function(){return\"undefined\"!==typeof Notification&&\"permission\"in Notification?\n\n/walkingideas/TradeStationPositionView/tspv/client/lib/proxy_settings.js:\n    1: _proxyUrl = \"http://gnomepods-1574399552.us-east-1.elb.amazonaws.com:9090/\";  // URL for your own proxy server\n\n/walkingideas/TradeStationPositionView/tspv/client/lib/scrape.js:\n   11    Session.set(\"stockticker_pending_list\", pendingStocks);\n   12  \n   13:   var url = \"http://finance.google.com/finance/info?client=ig&q=\" + symbol;\n   14  \n   15:   var url = \"http://query.yahooapis.com/v1/public/yql?q=select%20LastTradePriceOnly%20from%20yahoo.finance.quotes%20where%20symbol%20in%20(%22\" + symbol + \" %22)&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys\";\n   16  \n   17    $.ajax(url, {\n   ..\n   47    Session.set(\"stockticker_atr_pending_list\", pendingStocks);\n   48  \n   49:   var url = _proxyUrl + \"http://finviz.com/quote.ashx?t=\" + symbol;\n   50    HTTP.call(\"GET\", url, function(err, result) {\n   51      var regex = new RegExp('ATR</td><td width=\"8%\" class=\"snapshot-td2\" align=\"left\"><b>([0-9.]*)</b></td>');\n\n/walkingideas/TradeStationPositionView/tspv/lib/math.js:\n   39   \n   40  //  JavaScript adopted from Bernt Arne Odegaard's Financial Numerical Recipes\n   41: //  http://finance.bi.no/~bernt/gcc_prog/algoritms/algoritms/algoritms.html\n   42: //  by Steve Derezinski, CXWeb, Inc.  http://www.cxweb.com\n   43  //  Copyright (C) 1998  Steve Derezinski, Bernt Arne Odegaard\n   44  //\n   ..\n   51  //  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n   52  //  GNU General Public License for more details.\n   53: //  http://www.fsf.org/copyleft/gpl.html\n   54   \n   55  function ndist(z) {\n\n/walkingideas/TradeStationPositionView/tspv/server/lib/external.js:\n    8      symbol = symbol.toLowerCase();\n    9      var letter = symbol[0];\n   10:     var url = \"http://biz.yahoo.com/research/earncal/\" + letter + \"/\" + symbol + \".html\";\n   11  \n   12      var result = makeHttpCall(\"GET\",url, {}, 1);\n   ..\n   26  \n   27    refreshWeeklies: function(token) {\n   28:     var url = \"http://www.optionsclearing.com/webapps/weekly-options?action=download\";\n   29      var result = HTTP.call(\"POST\", url);\n   30      var result = result.content;\n\n22 matches across 9 files\n\n\nSearching 30 files for \"tradestation\"\n\n/walkingideas/TradeStationPositionView/tspv/app/router.js:\n   27  \n   28    this.route('accountListTS', {\n   29:     path: '/tradeStation',\n   30      template: 'accountListTS',\n   31      waitOn: function() {\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n    1  <template name=\"layout\">\n    2  	<head>\n    3: 		<title>TradeStation Position View</title>\n    4  	</head>\n    5  \n    .\n    7    <div class=\"container\">\n    8      <div class=\"navbar-header\">\n    9: 	    <a class=\"navbar-brand\" href=\"#\">TradeStation Position View</a>\n   10      </div>\n   11  \n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.js:\n  337  \n  338  \n  339: // TradeStation HTML Features //\n  340  \n  341  function getTSLoginUrl() {\n\n/walkingideas/TradeStationPositionView/tspv/lib/settings.js:\n    1  ts_setting = {\n    2: 	'host': \"tradestation.com/v2\",\n    3  	'apiKey': \"20392797-CB3A-406C-A1DA-4E022F19CCBA\",\n    4  	'secret': \"799A18D4-DFBF-49C8-BE6B-02538EBE9A7D\",\n\n5 matches across 4 files\n\n\nSearching 30 files for \"ts_setting\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.js:\n    6  \n    7      // Calls refresh every minute\n    8:     //ts_setting.refreshID = setInterval( refreshTS, 120000);\n    9    }\n   10  };\n   ..\n  297        var params = {\n  298          grant_type: \"authorization_code\",\n  299:         client_id: ts_setting.apiKey,\n  300          redirect_uri: uri,\n  301          code: queryStrings[\"code\"],\n  302:         client_secret: ts_setting.secret\n  303        };\n  304  \n  ...\n  342    var authUrl = host + \"/authorize\" +\n  343      \"?response_type=code\" +\n  344:     \"&client_id=\" + ts_setting.apiKey +\n  345      \"&redirect_uri=\" + window.location;\n  346  \n  ...\n  362    var params = {\n  363      grant_type: \"refresh_token\",\n  364:     client_id: ts_setting.apiKey,\n  365      redirect_uri: uri,\n  366:     client_secret: ts_setting.secret,\n  367      refresh_token: amplify.store(\"ts_refresh_token\")\n  368    };\n\n/walkingideas/TradeStationPositionView/tspv/lib/settings.js:\n    1: ts_setting = {\n    2  	'host': \"tradestation.com/v2\",\n    3  	'apiKey': \"20392797-CB3A-406C-A1DA-4E022F19CCBA\",\n    .\n    9  \n   10  host = \"\";\n   11: if (ts_setting.environment == \"SIM\") {\n   12: 	host = \"https://sim.api.\" + ts_setting.host;\n   13: } else if (ts_setting.environment == \"PROD\") {\n   14: 	host = \"https://api.\" + ts_setting.host;\n   15  }\n   16  \n\n11 matches across 2 files\n\n\nSearching 30 files for \"ts_setting\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.js:\n    6  \n    7      // Calls refresh every minute\n    8:     //ts_setting.refreshID = setInterval( refreshTS, 120000);\n    9    }\n   10  };\n   ..\n  297        var params = {\n  298          grant_type: \"authorization_code\",\n  299:         client_id: ts_setting.apiKey,\n  300          redirect_uri: uri,\n  301          code: queryStrings[\"code\"],\n  302:         client_secret: ts_setting.secret\n  303        };\n  304  \n  ...\n  342    var authUrl = host + \"/authorize\" +\n  343      \"?response_type=code\" +\n  344:     \"&client_id=\" + ts_setting.apiKey +\n  345      \"&redirect_uri=\" + window.location;\n  346  \n  ...\n  362    var params = {\n  363      grant_type: \"refresh_token\",\n  364:     client_id: ts_setting.apiKey,\n  365      redirect_uri: uri,\n  366:     client_secret: ts_setting.secret,\n  367      refresh_token: amplify.store(\"ts_refresh_token\")\n  368    };\n\n/walkingideas/TradeStationPositionView/tspv/lib/settings.js:\n    1: ts_setting = {\n    2  	'host': \"tradestation.com/v2\",\n    3  	'apiKey': \"20392797-CB3A-406C-A1DA-4E022F19CCBA\",\n    .\n    9  \n   10  host = \"\";\n   11: if (ts_setting.environment == \"SIM\") {\n   12: 	host = \"https://sim.api.\" + ts_setting.host;\n   13: } else if (ts_setting.environment == \"PROD\") {\n   14: 	host = \"https://api.\" + ts_setting.host;\n   15  }\n   16  \n\n11 matches across 2 files\n\n\nSearching 31 files for \"updateOrdersForAllAccounts\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.js:\n   61      var btn = $(e.currentTarget);\n   62      btn.button('loading');\n   63:     updateOrdersForAllAccounts(function() {\n   64        btn.button('reset');\n   65      });\n\n/walkingideas/TradeStationPositionView/tspv/client/lib/tradestation.js:\n  128  };\n  129  \n  130: updateOrdersForAllAccounts = function(callback) {\n  131    token = amplify.store(\"ts_token\");\n  132    if (!token) return;\n\n2 matches across 2 files\n\n\nSearching 31 files for \"Positions.\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.js:\n  197      // first check if positions are all options\n  198      var allOptions = true;\n  199:     this.Positions.forEach(function(position) {\n  200        var parts = position.Symbol.split(\" \"); // TODO centralize this\n  201        if (parts.length == 1)\n  ...\n  207      }\n  208      else {\n  209:       if (this.Positions.length == 1) {\n  210          var data = getOptionDataFromSymbol(this.Positions[0].Symbol);\n  211          if (data['type'] == 'C')\n  ...\n  216            return \"Unsupported\";\n  217        }\n  218:       else if (this.Positions.length == 2) {\n  219          var pos1 = getOptionDataFromSymbol(this.Positions[0].Symbol);\n  220          var pos2 = getOptionDataFromSymbol(this.Positions[1].Symbol);\n  ...\n  242    TotalOpenProfitLoss: function() {\n  243      var sum = 0;\n  244:     this.Positions.forEach(function(pos) {\n  245        sum += pos.OpenProfitLoss;\n  246      });\n\n/walkingideas/TradeStationPositionView/tspv/client/lib/tradestation.js:\n   54          },\n   55          success: function(positions) {\n   56:           positions.forEach(function(pos){\n   57              addPositionToAccount(pos, data[0]);\n   58            })\n   ..\n  110        if (!symbol.Positions)\n  111          symbol.Positions = [];\n  112:       symbol.Positions.push(pos);\n  113        hasExisting = true;\n  114        break;\n  ...\n  123        Positions : []\n  124      }\n  125:     symbol.Positions.push(pos);\n  126      account.Symbols.push(symbol);\n  127    }\n\n/walkingideas/TradeStationPositionView/tspv/collections/collections.js:\n   18  \n   19    Meteor.publish('positions', function() {\n   20:     return Positions.find();\n   21    });\n   22  \n\n/walkingideas/TradeStationPositionView/tspv/server/lib/external.js:\n   92  \n   93    replacePositions: function(positions) {\n   94:     Positions.remove({});\n   95:     for(i=0; i<positions.length; i++) {\n   96        var position = positions[i];\n   97:       Positions.insert(position);\n   98      }\n   99    },\n\n11 matches across 4 files\n\n\nSearching 32 files for \"updatePositions: \"\n\n0 matches\n\nSearching 32 files for \"updatePositions : \"\n\n/walkingideas/TradeStationPositionView/tspv/server/core.js:\n    1  Meteor.methods({\n    2    // wipes all positions and then add what's passed in\n    3:   updatePositions : function(positions) {\n    4      Positions.remove();\n    5  \n\n1 match in 1 file\n\n\nSearching 32 files for \"getOptionDataFromSymbol = \"\n\n/walkingideas/TradeStationPositionView/tspv/lib/stock.js:\n    1: getOptionDataFromSymbol = function(symbolStr) {\n    2    var parts = symbolStr.split(\" \");\n    3  \n\n1 match in 1 file\n\n\nSearching 32 files for \">TS<\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n   12      <ul class=\"nav navbar-nav\">\n   13        <li class=\"{{#if isAccountListIB}}active{{/if}}\"><a href=\"{{pathFor 'accountListIB'}}\">IB</a></li>\n   14:       <li class=\"{{#if isAccountListTS}}active{{/if}}\"><a href=\"{{pathFor 'accountListTS'}}\">TS</a></li>\n   15        <li class=\"{{#if isWatchlist}}active{{/if}}\"><a href=\"{{pathFor 'watchlist'}}\">Watchlist</a></li>\n   16        <li class=\"{{#if isSectorEtfs}}active{{/if}}\"><a href=\"{{pathFor 'sectorEtfs'}}\">Market/Sector</a></li>\n\n1 match in 1 file\n\n\nSearching 32 files for \"SUPPORTED_COUNTRIES\"\n\n0 matches\n\nSearching 33 files for \"positionDebug:\"\n\n0 matches\n\nSearching 33 files for \"positionDebug\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n  101  \n  102  <div class=\"{{symbolStateCSS}}\" style=\"margin: 5px; margin-right: 35px; padding: 5px; text-align: center;\">\n  103: {{positionDebug}}\n  104    <div class=\"h4\" style=\"line-height: 1.2em;\">\n  105      {{Symbol}}\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.js:\n  177  \n  178  Template.symbol.helpers({\n  179:   positionDebug : function() {\n  180      return this.Positions;\n  181    },\n\n2 matches across 2 files\n\n\nSearching 33 files for \"parsecsv\"\n\n/walkingideas/TradeStationPositionView/tspv/lib/utils.js:\n   94  \n   95  // takes CSV, assumes first line is column name, returns array of associative obj\n   96: parseCSV = function(csv) {\n   97    var lines = csv.split(\"\\n\");\n   98    var header = lines[0];\n\n/walkingideas/TradeStationPositionView/tspv/server/integration.js:\n   28      var content = result.content;\n   29  \n   30:     var data = parseCSV(content);\n   31  \n   32      console.log(data);\n\n2 matches across 2 files\n\n\nSearching 33 files for \"TradeStation\"\n\n/walkingideas/TradeStationPositionView/tspv/app/router.js:\n   27  \n   28    this.route('accountListTS', {\n   29:     path: '/tradeStation',\n   30      template: 'accountListTS',\n   31      waitOn: function() {\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n    1  <template name=\"layout\">\n    2  	<head>\n    3: 		<title>TradeStation Position View</title>\n    4  	</head>\n    5  \n    .\n    7    <div class=\"container\">\n    8      <div class=\"navbar-header\">\n    9: 	    <a class=\"navbar-brand\" href=\"#\">TradeStation Position View</a>\n   10      </div>\n   11  \n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.js:\n  414  \n  415  \n  416: // TradeStation HTML Features //\n  417  \n  418  function getTSLoginUrl() {\n\n/walkingideas/TradeStationPositionView/tspv/lib/settings.js:\n    1  ts_setting = {\n    2: 	'host': \"tradestation.com/v2\",\n    3  	'apiKey': \"20392797-CB3A-406C-A1DA-4E022F19CCBA\",\n    4  	'secret': \"799A18D4-DFBF-49C8-BE6B-02538EBE9A7D\",\n\n5 matches across 4 files\n\n\nSearching 33 files for \"TradeStation\"\n\n/walkingideas/TradeStationPositionView/tspv/app/router.js:\n   27  \n   28    this.route('accountListTS', {\n   29:     path: '/tradeStation',\n   30      template: 'accountListTS',\n   31      waitOn: function() {\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n    1  <template name=\"layout\">\n    2  	<head>\n    3: 		<title>TradeStation Position View</title>\n    4  	</head>\n    5  \n    .\n    7    <div class=\"container\">\n    8      <div class=\"navbar-header\">\n    9: 	    <a class=\"navbar-brand\" href=\"#\">TradeStation Position View</a>\n   10      </div>\n   11  \n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.js:\n  414  \n  415  \n  416: // TradeStation HTML Features //\n  417  \n  418  function getTSLoginUrl() {\n\n/walkingideas/TradeStationPositionView/tspv/lib/settings.js:\n    1  ts_setting = {\n    2: 	'host': \"tradestation.com/v2\",\n    3  	'apiKey': \"20392797-CB3A-406C-A1DA-4E022F19CCBA\",\n    4  	'secret': \"799A18D4-DFBF-49C8-BE6B-02538EBE9A7D\",\n\n5 matches across 4 files\n\n\nSearching 33 files for \"\"layout\"\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n    1: <template name=\"layout\">\n    2  	<head>\n    3  		<title>One Good Trade</title>\n\n1 match in 1 file\n\n\nSearching 33 files for \"\"layout\"\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n    1: <template name=\"layout\">\n    2  	<head>\n    3  		<title>One Good Trade</title>\n\n1 match in 1 file\n\n\nSearching 33 files for \"\"symbol\"\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n   94  </template>\n   95  \n   96: <template name=\"symbol\">\n   97  <div style=\"width: 360px; display: inline-block;\">\n   98    <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.js:\n   97      var date_delta = daysBetween(today, data[\"exp\"]);\n   98      var option_price = parseFloat(this.MarketPrice); //(this.AskPrice + this.BidPrice) / 2;\n   99:     var stock_price = Session.get(\"stockticker_\" + data[\"symbol\"]);\n  100      var strike_price = data[\"strike\"];\n  101  \n  102:     var old_price = Session.get(\"stockticker_\" + data[\"symbol\"]);\n  103:     var age = Session.get(\"stockticker_checked_on_\" + data[\"symbol\"]);\n  104      var now = new Date();\n  105  \n  ...\n  108      }\n  109      else {\n  110:       getStockPrice(data[\"symbol\"]);\n  111        return \"...\";\n  112      }\n  ...\n  142      var strike_price = data[\"strike\"];\n  143  \n  144:     var old_price = Session.get(\"stockticker_\" + data[\"symbol\"]);\n  145:     var age = Session.get(\"stockticker_checked_on_\" + data[\"symbol\"]);\n  146      var now = new Date();\n  147  \n  ...\n  151      }\n  152      else {\n  153:       getStockPrice(data[\"symbol\"]);\n  154        return \"...\";\n  155      }\n  ...\n  202    underlying: function() {\n  203      var data = getOptionDataFromSymbol(this.Positions[0].Symbol);\n  204:     var stock_price = Session.get(\"stockticker_\" + data[\"symbol\"]);\n  205      return stock_price;\n  206    },\n  ...\n  209      var data = getOptionDataFromSymbol(this.Positions[0].Symbol);\n  210      var today = getToday();\n  211:     var old_atr = Session.get(\"stockticker_atr_\" + data[\"symbol\"]);\n  212:     var age = Session.get(\"stockticker_atr_checked_on_\" + data[\"symbol\"]);\n  213      var now = new Date();\n  214  \n  ...\n  218      }\n  219      else {\n  220:       getStockATR(data[\"symbol\"]);\n  221        return \"...\";\n  222      }\n\n/walkingideas/TradeStationPositionView/tspv/server/lib/external.js:\n   36      for(var i=0; i < lines.length; i++) {\n   37        if (!foundSymbols) {\n   38:         if (lines[i].indexOf(\"SYMBOL\") == 0) {\n   39            foundSymbols = true;\n   40            continue;\n\n13 matches across 3 files\n\n\nSearching 33 files for \"\"layout\"\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n    1: <template name=\"layout\">\n    2  	<head>\n    3  		<title>One Good Trade</title>\n\n1 match in 1 file\n\n\nSearching 33 files for \"accountlistib\"\n\n/walkingideas/TradeStationPositionView/tspv/app/router.js:\n   22      },\n   23      onBeforeAction: function() {\n   24:       Session.set(\"activePage\", \"accountListIB\");\n   25        this.next();\n   26      },\n\n/walkingideas/TradeStationPositionView/tspv/client/ib.html:\n    2  <div class=\"row\">\n    3    <div class=\"col-md-12\">\n    4:     {{> accountListIB}}\n    5    </div>\n    6  </div>\n    7  </template>\n    8  \n    9: <template name=\"accountListIB\">\n   10    <div class=\"block-bg\">\n   11      <h3>IB Positions <button class=\"btn btn-success\" id=\"syncAccountBtn\">Sync Account</button>\n\n/walkingideas/TradeStationPositionView/tspv/client/ib.js:\n    1: Template.accountListIB.helpers({\n    2    positions : function() {\n    3      var pos = Positions.find().fetch();\n    .\n   32  });\n   33  \n   34: Template.accountListIB.events({\n   35    \"click #syncAccountBtn\" : function() {\n   36      Meteor.call(\"syncIB\", function(err, result) {\n   ..\n   40  });\n   41  \n   42: Template.accountListIB.rendered = function() {\n   43    accountList_refresh = setInterval( refreshCharts, 15000);\n   44  }\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n   12      <ul class=\"nav navbar-nav\">\n   13        <li class=\"{{#if isJournal}}active{{/if}}\"><a href=\"{{pathFor 'journal'}}\">Journal</a></li>\n   14:       <li class=\"{{#if isAccountListIB}}active{{/if}}\"><a href=\"{{pathFor 'accountListIB'}}\">Portfolio</a></li>\n   15        <!--\n   16        <li class=\"{{#if isAccountListTS}}active{{/if}}\"><a href=\"{{pathFor 'accountListTS'}}\">TS</a></li>\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.js:\n   18     return \"accountListTS\" == Session.get(\"activePage\");\n   19    },\n   20:   isAccountListIB: function() {\n   21:    return \"accountListIB\" == Session.get(\"activePage\");\n   22    },\n   23    isWatchlist: function() {\n\n10 matches across 5 files\n\n\nSearching 33 files for \"pathfor 'account\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n   12      <ul class=\"nav navbar-nav\">\n   13        <li class=\"{{#if isJournal}}active{{/if}}\"><a href=\"{{pathFor 'journal'}}\">Journal</a></li>\n   14:       <li class=\"{{#if isAccountListIB}}active{{/if}}\"><a href=\"{{pathFor 'accountListIB'}}\">Portfolio</a></li>\n   15        <!--\n   16:       <li class=\"{{#if isAccountListTS}}active{{/if}}\"><a href=\"{{pathFor 'accountListTS'}}\">TS</a></li>\n   17        -->\n   18        <li class=\"{{#if isWatchlist}}active{{/if}}\"><a href=\"{{pathFor 'watchlist'}}\">Watchlist</a></li>\n\n2 matches in 1 file\n",
+			"contents": "Searching 27 files for \"walkingideas.com\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n   84  <div style=\"width: 360px; display: inline-block; float: left;\">\n   85  <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   86: <img class=\"charts\" src=\"http://walkingideas.com/z/proxy.php?url=http%3A%2F%2Fstockcharts.com%2Fc-sc%2Fsc%3Fr%3D143680%26chart%3D{{Symbol}}%2Cuu%5B350%2Ca%5Ddacayaci%5Bpb20!b50%5D%5Bdg%5D&ts={{currentTimestamp}}\" />\n   87  </a>\n   88  {{> earnings}}\n   ..\n   93  <div style=\"width: 360px; display: inline-block; float: left;\">\n   94  <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   95: <img class=\"charts\" src=\"http://walkingideas.com/z/proxy.php?url=http%3A%2F%2Fstockcharts.com%2Fc-sc%2Fsc%3Fr%3D143680%26chart%3D{{Symbol}}%2Cuu%5B350%2Ca%5Ddacayaci%5Bpb20!b50%5D%5Bdg%5D&ts={{currentTimestamp}}\" />\n   96  </a>\n   97  {{strategy}} {{underlying}}\n\n/walkingideas/TradeStationPositionView/tspv/client/watchlist.html:\n   38  </div>\n   39  <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   40: <img class=\"charts\" src=\"http://walkingideas.com/z/proxy.php?url=http%3A%2F%2Fstockcharts.com%2Fc-sc%2Fsc%3Fr%3D143680%26chart%3D{{Symbol}}%2Cuu%5B350%2Ca%5Ddacayaci%5Bpb20!b50%5D%5Bdg%5D&ts={{currentTimestamp}}\" />\n   41  </a>\n   42  </div>\n\n3 matches across 2 files\n\n\nSearching 27 files for \"walkingideas.com\"\n\n/walkingideas/TradeStationPositionView/tspv/client/watchlist.html:\n   38  </div>\n   39  <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   40: <img class=\"charts\" src=\"http://walkingideas.com/z/proxy.php?url=http%3A%2F%2Fstockcharts.com%2Fc-sc%2Fsc%3Fr%3D143680%26chart%3D{{Symbol}}%2Cuu%5B350%2Ca%5Ddacayaci%5Bpb20!b50%5D%5Bdg%5D&ts={{currentTimestamp}}\" />\n   41  </a>\n   42  </div>\n\n1 match in 1 file\n\n\nSearching 27 files for \"gnomepod\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n   84  <div style=\"width: 360px; display: inline-block; float: left;\">\n   85  <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   86: <img class=\"charts\" src=\"http://gnomepods-1574399552.us-east-1.elb.amazonaws.com:9090/http://stockcharts.com/c-sc/sc?r=143680&chart={{Symbol}},uu[350,a]dacayaci[pb20!b50][dg]&ts={{currentTimestamp}}\" />\n   87  </a>\n   88  {{> earnings}}\n   ..\n   93  <div style=\"width: 360px; display: inline-block; float: left;\">\n   94  <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   95: <img class=\"charts\" src=\"http://gnomepods-1574399552.us-east-1.elb.amazonaws.com:9090/http://stockcharts.com/c-sc/sc?r=143680&chart={{Symbol}},uu[350,a]dacayaci[pb20!b50][dg]&ts={{currentTimestamp}}\" />\n   96  </a>\n   97  {{strategy}} {{underlying}}\n\n/walkingideas/TradeStationPositionView/tspv/client/lib/scrape.js:\n   47    Session.set(\"stockticker_atr_pending_list\", pendingStocks);\n   48  \n   49:   var url = 'http://gnomepods-1574399552.us-east-1.elb.amazonaws.com:9090/' + \"http://finviz.com/quote.ashx?t=\" + symbol;\n   50    HTTP.call(\"GET\", url, function(err, result) {\n   51      var regex = new RegExp('ATR</td><td width=\"8%\" class=\"snapshot-td2\" align=\"left\"><b>([0-9.]*)</b></td>');\n\n3 matches across 2 files\n\n\nSearching 27 files for \"gnomepod\"\n\n/walkingideas/TradeStationPositionView/tspv/client/lib/scrape.js:\n   47    Session.set(\"stockticker_atr_pending_list\", pendingStocks);\n   48  \n   49:   var url = 'http://gnomepods-1574399552.us-east-1.elb.amazonaws.com:9090/' + \"http://finviz.com/quote.ashx?t=\" + symbol;\n   50    HTTP.call(\"GET\", url, function(err, result) {\n   51      var regex = new RegExp('ATR</td><td width=\"8%\" class=\"snapshot-td2\" align=\"left\"><b>([0-9.]*)</b></td>');\n\n1 match in 1 file\n\n\nSearching 27 files for \"gnomepod\"\n\n/walkingideas/TradeStationPositionView/tspv/client/lib/scrape.js:\n   47    Session.set(\"stockticker_atr_pending_list\", pendingStocks);\n   48  \n   49:   var url = 'http://gnomepods-1574399552.us-east-1.elb.amazonaws.com:9090/' + \"http://finviz.com/quote.ashx?t=\" + symbol;\n   50    HTTP.call(\"GET\", url, function(err, result) {\n   51      var regex = new RegExp('ATR</td><td width=\"8%\" class=\"snapshot-td2\" align=\"left\"><b>([0-9.]*)</b></td>');\n\n1 match in 1 file\n\n\nSearching 27 files for \"proxyUrl\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n   84  <div style=\"width: 360px; display: inline-block; float: left;\">\n   85  <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   86: <img class=\"charts\" src=\"{{proxyUrl}}http://stockcharts.com/c-sc/sc?r=143680&chart={{Symbol}},uu[350,a]dacayaci[pb20!b50][dg]&ts={{currentTimestamp}}\" />\n   87  </a>\n   88  {{> earnings}}\n   ..\n   93  <div style=\"width: 360px; display: inline-block; float: left;\">\n   94  <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   95: <img class=\"charts\" src=\"{{proxyUrl}}http://stockcharts.com/c-sc/sc?r=143680&chart={{Symbol}},uu[350,a]dacayaci[pb20!b50][dg]&ts={{currentTimestamp}}\" />\n   96  </a>\n   97  {{strategy}} {{underlying}}\n\n/walkingideas/TradeStationPositionView/tspv/client/watchlist.html:\n   38  </div>\n   39  <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   40: <img class=\"charts\" src=\"{{proxyUrl}}http://stockcharts.com/c-sc/sc?r=143680&chart={{Symbol}},uu[350,a]dacayaci[pb20!b50][dg]&ts={{currentTimestamp}}\" />\n   41  </a>\n   42  </div>\n\n/walkingideas/TradeStationPositionView/tspv/client/lib/startup.js:\n    1  UI._allowJavascriptUrls()\n    2  \n    3: UI.registerHelper('proxyUrl', function () {\n    4    if (process.env.PROXY_URL) {\n    5      return process.env.PROXY_URL;\n\n4 matches across 3 files\n\n\nSearching 28 files for \"er_atr_pending_list\", pendingStocks);\n\n  var url = process.env.PROXY_URL + \"http://finviz.com/quote.ashx?t=\" + symbol;\n  HTTP.call(\"GET\", url, fun\"\n\n/walkingideas/TradeStationPositionView/tspv/client/lib/scrape.js:\n   45  \n   46    pendingStocks.push(symbol);\n   47:   Session.set(\"stockticker_atr_pending_list\", pendingStocks);\n   48: \n   49:   var url = process.env.PROXY_URL + \"http://finviz.com/quote.ashx?t=\" + symbol;\n   50:   HTTP.call(\"GET\", url, function(err, result) {\n   51      var regex = new RegExp('ATR</td><td width=\"8%\" class=\"snapshot-td2\" align=\"left\"><b>([0-9.]*)</b></td>');\n   52      var atr = regex.exec(result.content);\n\n1 match in 1 file\n\n\nSearching 28 files for \"_proxyUrl\"\n\n/walkingideas/TradeStationPositionView/tspv/client/lib/proxy_settings.js:\n    1: _proxyUrl = \"\";  // URL for your own proxy server\n\n/walkingideas/TradeStationPositionView/tspv/client/lib/scrape.js:\n   47    Session.set(\"stockticker_atr_pending_list\", pendingStocks);\n   48  \n   49:   var url = _proxyUrl + \"http://finviz.com/quote.ashx?t=\" + symbol;\n   50    HTTP.call(\"GET\", url, function(err, result) {\n   51      var regex = new RegExp('ATR</td><td width=\"8%\" class=\"snapshot-td2\" align=\"left\"><b>([0-9.]*)</b></td>');\n\n/walkingideas/TradeStationPositionView/tspv/client/lib/startup.js:\n    2  \n    3  UI.registerHelper('proxyUrl', function () {\n    4:   if (_proxyUrl) {\n    5:     return _proxyUrl;\n    6    }\n    7    else {\n\n4 matches across 3 files\n\n\nSearching 28 files for \"Portfolio\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n   11  \n   12      <ul class=\"nav navbar-nav\">\n   13:       <li class=\"{{#if isAccountList}}active{{/if}}\"><a href=\"{{pathFor 'accountList'}}\">Portfolio</a></li>\n   14        <li class=\"{{#if isWatchlist}}active{{/if}}\"><a href=\"{{pathFor 'watchlist'}}\">Watchlist</a></li>\n   15        <li class=\"{{#if isSectorEtfs}}active{{/if}}\"><a href=\"{{pathFor 'sectorEtfs'}}\">Market/Sector</a></li>\n   ..\n   55  \n   56  <template name=\"accountList\">\n   57:   <h3>Portfolio</h3>\n   58  	{{#each accounts}}\n   59  		{{> account}}\n\n2 matches in 1 file\n\n\nSearching 30 files for \"sync account\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n   28        </li>\n   29        <li>\n   30:         <button type=\"button\" class=\"btn btn-default btn-success navbar-btn hidden\" id=\"navAuthenticate\">Sync Account</button>\n   31  \n   32          <!--\n\n1 match in 1 file\n\n\nSearching 30 files for \"IB accounts\"\n\n/walkingideas/TradeStationPositionView/tspv/client/ib.html:\n    1  <template name=\"accountListIB\">\n    2: <h3>IB Accounts</h3>\n    3  </template>\n\n1 match in 1 file\n\n\nSearching 30 files for \"http://\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n   85  <template name=\"chart\">\n   86  <div style=\"width: 360px; display: inline-block; float: left;\">\n   87: <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   88: <img class=\"charts\" src=\"{{proxyUrl}}http://stockcharts.com/c-sc/sc?r=143680&chart={{Symbol}},uu[350,a]dacayaci[pb20!b50][dg]&ts={{currentTimestamp}}\" />\n   89  </a>\n   90  {{> earnings}}\n   ..\n   94  <template name=\"symbol\">\n   95  <div style=\"width: 360px; display: inline-block; float: left;\">\n   96: <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   97: <img class=\"charts\" src=\"{{proxyUrl}}http://stockcharts.com/c-sc/sc?r=143680&chart={{Symbol}},uu[350,a]dacayaci[pb20!b50][dg]&ts={{currentTimestamp}}\" />\n   98  </a>\n   99  {{strategy}} {{underlying}}\n\n/walkingideas/TradeStationPositionView/tspv/client/watchlist.html:\n   37    <br />\n   38  </div>\n   39: <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n   40: <img class=\"charts\" src=\"{{proxyUrl}}http://stockcharts.com/c-sc/sc?r=143680&chart={{Symbol}},uu[350,a]dacayaci[pb20!b50][dg]&ts={{currentTimestamp}}\" />\n   41  </a>\n   42  </div>\n\n/walkingideas/TradeStationPositionView/tspv/client/watchlist.js:\n   46    'click .viewTradeIdeas' : function(e) {\n   47      var symbol = e.currentTarget.id.replace(\"viewTradeIdeas_\", \"\");\n   48:     var url = \"http://www.trade-ideas.com/ticky/ticky.html?symbol=\" + symbol;\n   49      window.open(url, \"_blank\");\n   50    }\n\n/walkingideas/TradeStationPositionView/tspv/client/lib/moment.js:\n   39          aspNetTimeSpanJsonRegex = /(\\-)?(?:(\\d*)\\.)?(\\d+)\\:(\\d+)(?:\\:(\\d+)\\.?(\\d{3})?)?/,\n   40  \n   41:         // from http://docs.closure-library.googlecode.com/git/closure_goog_date_date.js.source.html\n   42          // somewhat more in line with 4.4.3.2 2004 spec, but allows decimal anywhere\n   43          isoDurationRegex = /^(-)?P(?:(?:([0-9,.]*)Y)?(?:([0-9,.]*)M)?(?:([0-9,.]*)D)?(?:T(?:([0-9,.]*)H)?(?:([0-9,.]*)M)?(?:([0-9,.]*)S)?)?|([0-9,.]*)W)$/,\n   ..\n  489  \n  490      // left zero fill a number\n  491:     // see http://jsperf.com/left-zero-filling for performance comparison\n  492      function leftZeroFill(number, targetLength, forceSign) {\n  493          var output = '' + Math.abs(number),\n  ...\n 1466      }\n 1467  \n 1468:     // Code from http://stackoverflow.com/questions/3561493/is-there-a-regexp-escape-function-in-javascript\n 1469      function regexpEscape(s) {\n 1470          return s.replace(/[-\\/\\\\^$*+?.()|[\\]{}]/g, '\\\\$&');\n ....\n 1578      function makeDate(y, m, d, h, M, s, ms) {\n 1579          //can't just apply() to create a date:\n 1580:         //http://stackoverflow.com/questions/181348/instantiating-a-javascript-object-by-calling-prototype-constructor-apply\n 1581          var date = new Date(y, m, d, h, M, s, ms);\n 1582  \n ....\n 1681      }\n 1682  \n 1683:     //http://en.wikipedia.org/wiki/ISO_week_date#Calculating_a_date_given_the_year.2C_week_number_and_weekday\n 1684      function dayOfYearFromWeeks(year, week, weekday, firstDayOfWeekOfYear, firstDayOfWeek) {\n 1685          var d = makeUTCDate(year, 0, 1).getUTCDay(), daysToAdd, dayOfYear;\n\n/walkingideas/TradeStationPositionView/tspv/client/lib/pnotify.custom.min.js:\n   37  c.extend(e.styling.bootstrap2,{closer:\"icon-remove\",pin_up:\"icon-pause\",pin_down:\"icon-play\"});c.extend(e.styling.bootstrap3,{closer:\"glyphicon glyphicon-remove\",pin_up:\"glyphicon glyphicon-pause\",pin_down:\"glyphicon glyphicon-play\"});c.extend(e.styling.fontawesome,{closer:\"fa fa-times\",pin_up:\"fa fa-pause\",pin_down:\"fa fa-play\"})});\n   38  (function(e){\"function\"===typeof define&&define.amd?define(\"pnotify.desktop\",[\"jquery\",\"pnotify\"],e):e(jQuery,PNotify)})(function(e,d){var c,f=function(a,b){f=\"Notification\"in window?function(a,b){return new Notification(a,b)}:\"mozNotification\"in navigator?function(a,b){return navigator.mozNotification.createNotification(a,b.body,b.icon).show()}:\"webkitNotifications\"in window?function(a,b){return window.webkitNotifications.createNotification(b.icon,a,b.body)}:function(a,b){return null};return f(a,\n   39: b)};d.prototype.options.desktop={desktop:!1,icon:null,tag:null};d.prototype.modules.desktop={tag:null,icon:null,genNotice:function(a,b){this.icon=null===b.icon?\"http://sciactive.com/pnotify/includes/desktop/\"+a.options.type+\".png\":!1===b.icon?null:b.icon;if(null===this.tag||null!==b.tag)this.tag=null===b.tag?\"PNotify-\"+Math.round(1E6*Math.random()):b.tag;a.desktop=f(a.options.title,{icon:this.icon,body:a.options.text,tag:this.tag});\"close\"in a.desktop||(a.desktop.close=function(){a.desktop.cancel()});\n   40  a.desktop.onclick=function(){a.elem.trigger(\"click\")};a.desktop.onclose=function(){\"closing\"!==a.state&&\"closed\"!==a.state&&a.remove()}},init:function(a,b){b.desktop&&(c=d.desktop.checkPermission(),0==c&&this.genNotice(a,b))},update:function(a,b,d){0==c&&b.desktop&&this.genNotice(a,b)},beforeOpen:function(a,b){0==c&&b.desktop&&a.elem.css({left:\"-10000px\",display:\"none\"})},afterOpen:function(a,b){0==c&&b.desktop&&(a.elem.css({left:\"-10000px\",display:\"none\"}),\"show\"in a.desktop&&a.desktop.show())},\n   41  beforeClose:function(a,b){0==c&&b.desktop&&a.elem.css({left:\"-10000px\",display:\"none\"})},afterClose:function(a,b){0==c&&b.desktop&&(a.elem.css({left:\"-10000px\",display:\"none\"}),a.desktop.close())}};d.desktop={permission:function(){\"undefined\"!==typeof Notification&&\"requestPermission\"in Notification?Notification.requestPermission():\"webkitNotifications\"in window&&window.webkitNotifications.requestPermission()},checkPermission:function(){return\"undefined\"!==typeof Notification&&\"permission\"in Notification?\n\n/walkingideas/TradeStationPositionView/tspv/client/lib/proxy_settings.js:\n    1: _proxyUrl = \"http://gnomepods-1574399552.us-east-1.elb.amazonaws.com:9090/\";  // URL for your own proxy server\n\n/walkingideas/TradeStationPositionView/tspv/client/lib/scrape.js:\n   11    Session.set(\"stockticker_pending_list\", pendingStocks);\n   12  \n   13:   var url = \"http://finance.google.com/finance/info?client=ig&q=\" + symbol;\n   14  \n   15:   var url = \"http://query.yahooapis.com/v1/public/yql?q=select%20LastTradePriceOnly%20from%20yahoo.finance.quotes%20where%20symbol%20in%20(%22\" + symbol + \" %22)&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys\";\n   16  \n   17    $.ajax(url, {\n   ..\n   47    Session.set(\"stockticker_atr_pending_list\", pendingStocks);\n   48  \n   49:   var url = _proxyUrl + \"http://finviz.com/quote.ashx?t=\" + symbol;\n   50    HTTP.call(\"GET\", url, function(err, result) {\n   51      var regex = new RegExp('ATR</td><td width=\"8%\" class=\"snapshot-td2\" align=\"left\"><b>([0-9.]*)</b></td>');\n\n/walkingideas/TradeStationPositionView/tspv/lib/math.js:\n   39   \n   40  //  JavaScript adopted from Bernt Arne Odegaard's Financial Numerical Recipes\n   41: //  http://finance.bi.no/~bernt/gcc_prog/algoritms/algoritms/algoritms.html\n   42: //  by Steve Derezinski, CXWeb, Inc.  http://www.cxweb.com\n   43  //  Copyright (C) 1998  Steve Derezinski, Bernt Arne Odegaard\n   44  //\n   ..\n   51  //  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n   52  //  GNU General Public License for more details.\n   53: //  http://www.fsf.org/copyleft/gpl.html\n   54   \n   55  function ndist(z) {\n\n/walkingideas/TradeStationPositionView/tspv/server/lib/external.js:\n    8      symbol = symbol.toLowerCase();\n    9      var letter = symbol[0];\n   10:     var url = \"http://biz.yahoo.com/research/earncal/\" + letter + \"/\" + symbol + \".html\";\n   11  \n   12      var result = makeHttpCall(\"GET\",url, {}, 1);\n   ..\n   26  \n   27    refreshWeeklies: function(token) {\n   28:     var url = \"http://www.optionsclearing.com/webapps/weekly-options?action=download\";\n   29      var result = HTTP.call(\"POST\", url);\n   30      var result = result.content;\n\n22 matches across 9 files\n\n\nSearching 30 files for \"tradestation\"\n\n/walkingideas/TradeStationPositionView/tspv/app/router.js:\n   27  \n   28    this.route('accountListTS', {\n   29:     path: '/tradeStation',\n   30      template: 'accountListTS',\n   31      waitOn: function() {\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n    1  <template name=\"layout\">\n    2  	<head>\n    3: 		<title>TradeStation Position View</title>\n    4  	</head>\n    5  \n    .\n    7    <div class=\"container\">\n    8      <div class=\"navbar-header\">\n    9: 	    <a class=\"navbar-brand\" href=\"#\">TradeStation Position View</a>\n   10      </div>\n   11  \n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.js:\n  337  \n  338  \n  339: // TradeStation HTML Features //\n  340  \n  341  function getTSLoginUrl() {\n\n/walkingideas/TradeStationPositionView/tspv/lib/settings.js:\n    1  ts_setting = {\n    2: 	'host': \"tradestation.com/v2\",\n    3  	'apiKey': \"20392797-CB3A-406C-A1DA-4E022F19CCBA\",\n    4  	'secret': \"799A18D4-DFBF-49C8-BE6B-02538EBE9A7D\",\n\n5 matches across 4 files\n\n\nSearching 30 files for \"ts_setting\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.js:\n    6  \n    7      // Calls refresh every minute\n    8:     //ts_setting.refreshID = setInterval( refreshTS, 120000);\n    9    }\n   10  };\n   ..\n  297        var params = {\n  298          grant_type: \"authorization_code\",\n  299:         client_id: ts_setting.apiKey,\n  300          redirect_uri: uri,\n  301          code: queryStrings[\"code\"],\n  302:         client_secret: ts_setting.secret\n  303        };\n  304  \n  ...\n  342    var authUrl = host + \"/authorize\" +\n  343      \"?response_type=code\" +\n  344:     \"&client_id=\" + ts_setting.apiKey +\n  345      \"&redirect_uri=\" + window.location;\n  346  \n  ...\n  362    var params = {\n  363      grant_type: \"refresh_token\",\n  364:     client_id: ts_setting.apiKey,\n  365      redirect_uri: uri,\n  366:     client_secret: ts_setting.secret,\n  367      refresh_token: amplify.store(\"ts_refresh_token\")\n  368    };\n\n/walkingideas/TradeStationPositionView/tspv/lib/settings.js:\n    1: ts_setting = {\n    2  	'host': \"tradestation.com/v2\",\n    3  	'apiKey': \"20392797-CB3A-406C-A1DA-4E022F19CCBA\",\n    .\n    9  \n   10  host = \"\";\n   11: if (ts_setting.environment == \"SIM\") {\n   12: 	host = \"https://sim.api.\" + ts_setting.host;\n   13: } else if (ts_setting.environment == \"PROD\") {\n   14: 	host = \"https://api.\" + ts_setting.host;\n   15  }\n   16  \n\n11 matches across 2 files\n\n\nSearching 30 files for \"ts_setting\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.js:\n    6  \n    7      // Calls refresh every minute\n    8:     //ts_setting.refreshID = setInterval( refreshTS, 120000);\n    9    }\n   10  };\n   ..\n  297        var params = {\n  298          grant_type: \"authorization_code\",\n  299:         client_id: ts_setting.apiKey,\n  300          redirect_uri: uri,\n  301          code: queryStrings[\"code\"],\n  302:         client_secret: ts_setting.secret\n  303        };\n  304  \n  ...\n  342    var authUrl = host + \"/authorize\" +\n  343      \"?response_type=code\" +\n  344:     \"&client_id=\" + ts_setting.apiKey +\n  345      \"&redirect_uri=\" + window.location;\n  346  \n  ...\n  362    var params = {\n  363      grant_type: \"refresh_token\",\n  364:     client_id: ts_setting.apiKey,\n  365      redirect_uri: uri,\n  366:     client_secret: ts_setting.secret,\n  367      refresh_token: amplify.store(\"ts_refresh_token\")\n  368    };\n\n/walkingideas/TradeStationPositionView/tspv/lib/settings.js:\n    1: ts_setting = {\n    2  	'host': \"tradestation.com/v2\",\n    3  	'apiKey': \"20392797-CB3A-406C-A1DA-4E022F19CCBA\",\n    .\n    9  \n   10  host = \"\";\n   11: if (ts_setting.environment == \"SIM\") {\n   12: 	host = \"https://sim.api.\" + ts_setting.host;\n   13: } else if (ts_setting.environment == \"PROD\") {\n   14: 	host = \"https://api.\" + ts_setting.host;\n   15  }\n   16  \n\n11 matches across 2 files\n\n\nSearching 31 files for \"updateOrdersForAllAccounts\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.js:\n   61      var btn = $(e.currentTarget);\n   62      btn.button('loading');\n   63:     updateOrdersForAllAccounts(function() {\n   64        btn.button('reset');\n   65      });\n\n/walkingideas/TradeStationPositionView/tspv/client/lib/tradestation.js:\n  128  };\n  129  \n  130: updateOrdersForAllAccounts = function(callback) {\n  131    token = amplify.store(\"ts_token\");\n  132    if (!token) return;\n\n2 matches across 2 files\n\n\nSearching 31 files for \"Positions.\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.js:\n  197      // first check if positions are all options\n  198      var allOptions = true;\n  199:     this.Positions.forEach(function(position) {\n  200        var parts = position.Symbol.split(\" \"); // TODO centralize this\n  201        if (parts.length == 1)\n  ...\n  207      }\n  208      else {\n  209:       if (this.Positions.length == 1) {\n  210          var data = getOptionDataFromSymbol(this.Positions[0].Symbol);\n  211          if (data['type'] == 'C')\n  ...\n  216            return \"Unsupported\";\n  217        }\n  218:       else if (this.Positions.length == 2) {\n  219          var pos1 = getOptionDataFromSymbol(this.Positions[0].Symbol);\n  220          var pos2 = getOptionDataFromSymbol(this.Positions[1].Symbol);\n  ...\n  242    TotalOpenProfitLoss: function() {\n  243      var sum = 0;\n  244:     this.Positions.forEach(function(pos) {\n  245        sum += pos.OpenProfitLoss;\n  246      });\n\n/walkingideas/TradeStationPositionView/tspv/client/lib/tradestation.js:\n   54          },\n   55          success: function(positions) {\n   56:           positions.forEach(function(pos){\n   57              addPositionToAccount(pos, data[0]);\n   58            })\n   ..\n  110        if (!symbol.Positions)\n  111          symbol.Positions = [];\n  112:       symbol.Positions.push(pos);\n  113        hasExisting = true;\n  114        break;\n  ...\n  123        Positions : []\n  124      }\n  125:     symbol.Positions.push(pos);\n  126      account.Symbols.push(symbol);\n  127    }\n\n/walkingideas/TradeStationPositionView/tspv/collections/collections.js:\n   18  \n   19    Meteor.publish('positions', function() {\n   20:     return Positions.find();\n   21    });\n   22  \n\n/walkingideas/TradeStationPositionView/tspv/server/lib/external.js:\n   92  \n   93    replacePositions: function(positions) {\n   94:     Positions.remove({});\n   95:     for(i=0; i<positions.length; i++) {\n   96        var position = positions[i];\n   97:       Positions.insert(position);\n   98      }\n   99    },\n\n11 matches across 4 files\n\n\nSearching 32 files for \"updatePositions: \"\n\n0 matches\n\nSearching 32 files for \"updatePositions : \"\n\n/walkingideas/TradeStationPositionView/tspv/server/core.js:\n    1  Meteor.methods({\n    2    // wipes all positions and then add what's passed in\n    3:   updatePositions : function(positions) {\n    4      Positions.remove();\n    5  \n\n1 match in 1 file\n\n\nSearching 32 files for \"getOptionDataFromSymbol = \"\n\n/walkingideas/TradeStationPositionView/tspv/lib/stock.js:\n    1: getOptionDataFromSymbol = function(symbolStr) {\n    2    var parts = symbolStr.split(\" \");\n    3  \n\n1 match in 1 file\n\n\nSearching 32 files for \">TS<\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n   12      <ul class=\"nav navbar-nav\">\n   13        <li class=\"{{#if isAccountListIB}}active{{/if}}\"><a href=\"{{pathFor 'accountListIB'}}\">IB</a></li>\n   14:       <li class=\"{{#if isAccountListTS}}active{{/if}}\"><a href=\"{{pathFor 'accountListTS'}}\">TS</a></li>\n   15        <li class=\"{{#if isWatchlist}}active{{/if}}\"><a href=\"{{pathFor 'watchlist'}}\">Watchlist</a></li>\n   16        <li class=\"{{#if isSectorEtfs}}active{{/if}}\"><a href=\"{{pathFor 'sectorEtfs'}}\">Market/Sector</a></li>\n\n1 match in 1 file\n\n\nSearching 32 files for \"SUPPORTED_COUNTRIES\"\n\n0 matches\n\nSearching 33 files for \"positionDebug:\"\n\n0 matches\n\nSearching 33 files for \"positionDebug\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n  101  \n  102  <div class=\"{{symbolStateCSS}}\" style=\"margin: 5px; margin-right: 35px; padding: 5px; text-align: center;\">\n  103: {{positionDebug}}\n  104    <div class=\"h4\" style=\"line-height: 1.2em;\">\n  105      {{Symbol}}\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.js:\n  177  \n  178  Template.symbol.helpers({\n  179:   positionDebug : function() {\n  180      return this.Positions;\n  181    },\n\n2 matches across 2 files\n\n\nSearching 33 files for \"parsecsv\"\n\n/walkingideas/TradeStationPositionView/tspv/lib/utils.js:\n   94  \n   95  // takes CSV, assumes first line is column name, returns array of associative obj\n   96: parseCSV = function(csv) {\n   97    var lines = csv.split(\"\\n\");\n   98    var header = lines[0];\n\n/walkingideas/TradeStationPositionView/tspv/server/integration.js:\n   28      var content = result.content;\n   29  \n   30:     var data = parseCSV(content);\n   31  \n   32      console.log(data);\n\n2 matches across 2 files\n\n\nSearching 33 files for \"TradeStation\"\n\n/walkingideas/TradeStationPositionView/tspv/app/router.js:\n   27  \n   28    this.route('accountListTS', {\n   29:     path: '/tradeStation',\n   30      template: 'accountListTS',\n   31      waitOn: function() {\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n    1  <template name=\"layout\">\n    2  	<head>\n    3: 		<title>TradeStation Position View</title>\n    4  	</head>\n    5  \n    .\n    7    <div class=\"container\">\n    8      <div class=\"navbar-header\">\n    9: 	    <a class=\"navbar-brand\" href=\"#\">TradeStation Position View</a>\n   10      </div>\n   11  \n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.js:\n  414  \n  415  \n  416: // TradeStation HTML Features //\n  417  \n  418  function getTSLoginUrl() {\n\n/walkingideas/TradeStationPositionView/tspv/lib/settings.js:\n    1  ts_setting = {\n    2: 	'host': \"tradestation.com/v2\",\n    3  	'apiKey': \"20392797-CB3A-406C-A1DA-4E022F19CCBA\",\n    4  	'secret': \"799A18D4-DFBF-49C8-BE6B-02538EBE9A7D\",\n\n5 matches across 4 files\n\n\nSearching 33 files for \"TradeStation\"\n\n/walkingideas/TradeStationPositionView/tspv/app/router.js:\n   27  \n   28    this.route('accountListTS', {\n   29:     path: '/tradeStation',\n   30      template: 'accountListTS',\n   31      waitOn: function() {\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n    1  <template name=\"layout\">\n    2  	<head>\n    3: 		<title>TradeStation Position View</title>\n    4  	</head>\n    5  \n    .\n    7    <div class=\"container\">\n    8      <div class=\"navbar-header\">\n    9: 	    <a class=\"navbar-brand\" href=\"#\">TradeStation Position View</a>\n   10      </div>\n   11  \n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.js:\n  414  \n  415  \n  416: // TradeStation HTML Features //\n  417  \n  418  function getTSLoginUrl() {\n\n/walkingideas/TradeStationPositionView/tspv/lib/settings.js:\n    1  ts_setting = {\n    2: 	'host': \"tradestation.com/v2\",\n    3  	'apiKey': \"20392797-CB3A-406C-A1DA-4E022F19CCBA\",\n    4  	'secret': \"799A18D4-DFBF-49C8-BE6B-02538EBE9A7D\",\n\n5 matches across 4 files\n\n\nSearching 33 files for \"\"layout\"\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n    1: <template name=\"layout\">\n    2  	<head>\n    3  		<title>One Good Trade</title>\n\n1 match in 1 file\n\n\nSearching 33 files for \"\"layout\"\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n    1: <template name=\"layout\">\n    2  	<head>\n    3  		<title>One Good Trade</title>\n\n1 match in 1 file\n\n\nSearching 33 files for \"\"symbol\"\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n   94  </template>\n   95  \n   96: <template name=\"symbol\">\n   97  <div style=\"width: 360px; display: inline-block;\">\n   98    <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.js:\n   97      var date_delta = daysBetween(today, data[\"exp\"]);\n   98      var option_price = parseFloat(this.MarketPrice); //(this.AskPrice + this.BidPrice) / 2;\n   99:     var stock_price = Session.get(\"stockticker_\" + data[\"symbol\"]);\n  100      var strike_price = data[\"strike\"];\n  101  \n  102:     var old_price = Session.get(\"stockticker_\" + data[\"symbol\"]);\n  103:     var age = Session.get(\"stockticker_checked_on_\" + data[\"symbol\"]);\n  104      var now = new Date();\n  105  \n  ...\n  108      }\n  109      else {\n  110:       getStockPrice(data[\"symbol\"]);\n  111        return \"...\";\n  112      }\n  ...\n  142      var strike_price = data[\"strike\"];\n  143  \n  144:     var old_price = Session.get(\"stockticker_\" + data[\"symbol\"]);\n  145:     var age = Session.get(\"stockticker_checked_on_\" + data[\"symbol\"]);\n  146      var now = new Date();\n  147  \n  ...\n  151      }\n  152      else {\n  153:       getStockPrice(data[\"symbol\"]);\n  154        return \"...\";\n  155      }\n  ...\n  202    underlying: function() {\n  203      var data = getOptionDataFromSymbol(this.Positions[0].Symbol);\n  204:     var stock_price = Session.get(\"stockticker_\" + data[\"symbol\"]);\n  205      return stock_price;\n  206    },\n  ...\n  209      var data = getOptionDataFromSymbol(this.Positions[0].Symbol);\n  210      var today = getToday();\n  211:     var old_atr = Session.get(\"stockticker_atr_\" + data[\"symbol\"]);\n  212:     var age = Session.get(\"stockticker_atr_checked_on_\" + data[\"symbol\"]);\n  213      var now = new Date();\n  214  \n  ...\n  218      }\n  219      else {\n  220:       getStockATR(data[\"symbol\"]);\n  221        return \"...\";\n  222      }\n\n/walkingideas/TradeStationPositionView/tspv/server/lib/external.js:\n   36      for(var i=0; i < lines.length; i++) {\n   37        if (!foundSymbols) {\n   38:         if (lines[i].indexOf(\"SYMBOL\") == 0) {\n   39            foundSymbols = true;\n   40            continue;\n\n13 matches across 3 files\n\n\nSearching 33 files for \"\"layout\"\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n    1: <template name=\"layout\">\n    2  	<head>\n    3  		<title>One Good Trade</title>\n\n1 match in 1 file\n\n\nSearching 33 files for \"accountlistib\"\n\n/walkingideas/TradeStationPositionView/tspv/app/router.js:\n   22      },\n   23      onBeforeAction: function() {\n   24:       Session.set(\"activePage\", \"accountListIB\");\n   25        this.next();\n   26      },\n\n/walkingideas/TradeStationPositionView/tspv/client/ib.html:\n    2  <div class=\"row\">\n    3    <div class=\"col-md-12\">\n    4:     {{> accountListIB}}\n    5    </div>\n    6  </div>\n    7  </template>\n    8  \n    9: <template name=\"accountListIB\">\n   10    <div class=\"block-bg\">\n   11      <h3>IB Positions <button class=\"btn btn-success\" id=\"syncAccountBtn\">Sync Account</button>\n\n/walkingideas/TradeStationPositionView/tspv/client/ib.js:\n    1: Template.accountListIB.helpers({\n    2    positions : function() {\n    3      var pos = Positions.find().fetch();\n    .\n   32  });\n   33  \n   34: Template.accountListIB.events({\n   35    \"click #syncAccountBtn\" : function() {\n   36      Meteor.call(\"syncIB\", function(err, result) {\n   ..\n   40  });\n   41  \n   42: Template.accountListIB.rendered = function() {\n   43    accountList_refresh = setInterval( refreshCharts, 15000);\n   44  }\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n   12      <ul class=\"nav navbar-nav\">\n   13        <li class=\"{{#if isJournal}}active{{/if}}\"><a href=\"{{pathFor 'journal'}}\">Journal</a></li>\n   14:       <li class=\"{{#if isAccountListIB}}active{{/if}}\"><a href=\"{{pathFor 'accountListIB'}}\">Portfolio</a></li>\n   15        <!--\n   16        <li class=\"{{#if isAccountListTS}}active{{/if}}\"><a href=\"{{pathFor 'accountListTS'}}\">TS</a></li>\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.js:\n   18     return \"accountListTS\" == Session.get(\"activePage\");\n   19    },\n   20:   isAccountListIB: function() {\n   21:    return \"accountListIB\" == Session.get(\"activePage\");\n   22    },\n   23    isWatchlist: function() {\n\n10 matches across 5 files\n\n\nSearching 33 files for \"pathfor 'account\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n   12      <ul class=\"nav navbar-nav\">\n   13        <li class=\"{{#if isJournal}}active{{/if}}\"><a href=\"{{pathFor 'journal'}}\">Journal</a></li>\n   14:       <li class=\"{{#if isAccountListIB}}active{{/if}}\"><a href=\"{{pathFor 'accountListIB'}}\">Portfolio</a></li>\n   15        <!--\n   16:       <li class=\"{{#if isAccountListTS}}active{{/if}}\"><a href=\"{{pathFor 'accountListTS'}}\">TS</a></li>\n   17        -->\n   18        <li class=\"{{#if isWatchlist}}active{{/if}}\"><a href=\"{{pathFor 'watchlist'}}\">Watchlist</a></li>\n\n2 matches in 1 file\n\n\nSearching 34 files for \">Journal\"\n\n/walkingideas/TradeStationPositionView/tspv/client/journals.html:\n    1  <template name=\"journals\">\n    2  <div class=\"post\">\n    3: <h3>Journals</h3>\n    4  <hr />\n    5  </div>\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n   11  \n   12      <ul class=\"nav navbar-nav\">\n   13:       <li class=\"{{#if isJournal}}active{{/if}}\"><a href=\"{{pathFor 'journals'}}\">Journals</a></li>\n   14        <li class=\"{{#if isPositions}}active{{/if}}\"><a href=\"{{pathFor 'positions'}}\">Positions</a></li>\n   15        <!--\n\n2 matches across 2 files\n\n\nSearching 34 files for \"market/sector\"\n\n/walkingideas/TradeStationPositionView/tspv/client/sectorEtfs.html:\n    1  <template name=\"sectorEtfs\">\n    2    <div class=\"post\">\n    3:     <h3>Market/Sector</h3>\n    4      {{#each symbols}}\n    5        {{> chart}}\n\n1 match in 1 file\n\n\nSearching 34 files for \"\"symbol\"\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.html:\n   96  </template>\n   97  \n   98: <template name=\"symbol\">\n   99  <div style=\"width: 360px; display: inline-block;\">\n  100    <a target=\"_blank\" href=\"http://stockcharts.com/h-sc/ui?s={{Symbol}}\">\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.js:\n  100      var date_delta = daysBetween(today, data[\"exp\"]);\n  101      var option_price = parseFloat(this.MarketPrice); //(this.AskPrice + this.BidPrice) / 2;\n  102:     var stock_price = Session.get(\"stockticker_\" + data[\"symbol\"]);\n  103      var strike_price = data[\"strike\"];\n  104  \n  105:     var old_price = Session.get(\"stockticker_\" + data[\"symbol\"]);\n  106:     var age = Session.get(\"stockticker_checked_on_\" + data[\"symbol\"]);\n  107      var now = new Date();\n  108  \n  ...\n  111      }\n  112      else {\n  113:       getStockPrice(data[\"symbol\"]);\n  114        return \"...\";\n  115      }\n  ...\n  145      var strike_price = data[\"strike\"];\n  146  \n  147:     var old_price = Session.get(\"stockticker_\" + data[\"symbol\"]);\n  148:     var age = Session.get(\"stockticker_checked_on_\" + data[\"symbol\"]);\n  149      var now = new Date();\n  150  \n  ...\n  154      }\n  155      else {\n  156:       getStockPrice(data[\"symbol\"]);\n  157        return \"...\";\n  158      }\n  ...\n  205    underlying: function() {\n  206      var data = getOptionDataFromSymbol(this.Positions[0].Symbol);\n  207:     var stock_price = Session.get(\"stockticker_\" + data[\"symbol\"]);\n  208      return stock_price;\n  209    },\n  ...\n  212      var data = getOptionDataFromSymbol(this.Positions[0].Symbol);\n  213      var today = getToday();\n  214:     var old_atr = Session.get(\"stockticker_atr_\" + data[\"symbol\"]);\n  215:     var age = Session.get(\"stockticker_atr_checked_on_\" + data[\"symbol\"]);\n  216      var now = new Date();\n  217  \n  ...\n  221      }\n  222      else {\n  223:       getStockATR(data[\"symbol\"]);\n  224        return \"...\";\n  225      }\n\n/walkingideas/TradeStationPositionView/tspv/server/lib/external.js:\n   39      for(var i=0; i < lines.length; i++) {\n   40        if (!foundSymbols) {\n   41:         if (lines[i].indexOf(\"SYMBOL\") == 0) {\n   42            foundSymbols = true;\n   43            continue;\n\n13 matches across 3 files\n\n\nSearching 34 files for \"expiredSymbol\"\n\n/walkingideas/TradeStationPositionView/tspv/client/tspv.js:\n  199  \n  200      if (someExpired && !someActive) {\n  201:       return \"expiredSymbol\"\n  202      }\n  203    },\n\n/walkingideas/TradeStationPositionView/tspv/client/stylesheets/main.css:\n    1: .expiredSymbol {\n    2    background : #999;\n    3  }\n\n2 matches across 2 files\n",
 			"settings":
 			{
-				"buffer_size": 32604,
+				"buffer_size": 36142,
 				"line_ending": "Unix",
 				"name": "Find Results",
 				"scratch": true
+			}
+		},
+		{
+			"file": "tspv/client/sectorEtfs.html",
+			"settings":
+			{
+				"buffer_size": 228,
+				"line_ending": "Unix"
 			}
 		},
 		{
@@ -128,7 +136,7 @@
 			"file": "tspv/client/watchlist.html",
 			"settings":
 			{
-				"buffer_size": 1576,
+				"buffer_size": 1666,
 				"line_ending": "Unix"
 			}
 		},
@@ -144,7 +152,7 @@
 			"file": "tspv/client/tspv.html",
 			"settings":
 			{
-				"buffer_size": 4089,
+				"buffer_size": 4103,
 				"line_ending": "Unix"
 			}
 		},
@@ -157,10 +165,7 @@
 			}
 		},
 		{
-			"contents": "- show how many ATR we need this stock to move to get to max gain (for diagonal  vertical)\n- what do we do for straight call? a manually set target?\n\n- get the industry for the given symbol (lookup via finviz)\n\n- get overall bearish/bullish (based on ATR needed & position size)\n-- how to handle position sizing for diagonal?\n-- how to handle position sizing for straight call/put?\n-- how to handle position sizing for butterfly?\n\n- get industry based bearish/bullish ness (based on ATR needed & position size)\n\n- \"notes\" for each symbol\n--- use case: when trying to do intraday exit, set notes to follow through on\n\n- \n\n",
 			"file": "TODO",
-			"file_size": 619,
-			"file_write_time": 130919420210000000,
 			"settings":
 			{
 				"buffer_size": 621,
@@ -238,6 +243,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"expiredSymbol",
+			"\"symbol\"",
+			"market/sector",
+			">Journal",
 			"pathfor 'account",
 			"accountlistib",
 			"\"layout\"",
@@ -291,7 +300,7 @@
 	"groups":
 	[
 		{
-			"selected": 18,
+			"selected": 17,
 			"sheets":
 			[
 				{
@@ -299,7 +308,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 32604,
+						"buffer_size": 36142,
 						"regions":
 						{
 							"match":
@@ -822,6 +831,78 @@
 									[
 										32416,
 										32432
+									],
+									[
+										32777,
+										32785
+									],
+									[
+										33018,
+										33026
+									],
+									[
+										33381,
+										33394
+									],
+									[
+										33621,
+										33629
+									],
+									[
+										34053,
+										34061
+									],
+									[
+										34180,
+										34188
+									],
+									[
+										34258,
+										34266
+									],
+									[
+										34380,
+										34388
+									],
+									[
+										34553,
+										34561
+									],
+									[
+										34631,
+										34639
+									],
+									[
+										34753,
+										34761
+									],
+									[
+										34981,
+										34989
+									],
+									[
+										35213,
+										35221
+									],
+									[
+										35295,
+										35303
+									],
+									[
+										35415,
+										35423
+									],
+									[
+										35655,
+										35663
+									],
+									[
+										35941,
+										35954
+									],
+									[
+										36063,
+										36076
 									]
 								],
 								"scope": ""
@@ -830,15 +911,15 @@
 						"selection":
 						[
 							[
-								32290,
-								32290
+								36142,
+								36142
 							]
 						],
 						"settings":
 						{
 							"detect_indentation": false,
 							"line_numbers": false,
-							"output_tag": 33,
+							"output_tag": 37,
 							"result_base_dir": "",
 							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
 							"result_line_regex": "^ +([0-9]+):",
@@ -847,14 +928,42 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 14340.0,
+						"translation.y": 16245.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "tspv/client/sectorEtfs.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 228,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								228,
+								228
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "tspv/app/router.js",
 					"semi_transient": false,
 					"settings":
@@ -877,14 +986,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 50.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "tspv/lib/stock.js",
 					"semi_transient": false,
 					"settings":
@@ -910,11 +1019,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "tspv/client/lib/tradestation.js",
 					"semi_transient": false,
 					"settings":
@@ -940,11 +1049,11 @@
 						"translation.y": 1305.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "tspv/server/core.js",
 					"semi_transient": false,
 					"settings":
@@ -969,11 +1078,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "tspv/collections/collections.js",
 					"semi_transient": false,
 					"settings":
@@ -999,11 +1108,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 16,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": "tspv/lib/settings.js",
 					"semi_transient": false,
 					"settings":
@@ -1027,11 +1136,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 17,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 8,
 					"file": "tspv/client/tspv.js",
 					"semi_transient": false,
 					"settings":
@@ -1057,11 +1166,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 9,
 					"file": "tspv/client/ib.html",
 					"semi_transient": false,
 					"settings":
@@ -1073,8 +1182,8 @@
 						"selection":
 						[
 							[
-								181,
-								181
+								312,
+								312
 							]
 						],
 						"settings":
@@ -1087,11 +1196,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 10,
 					"file": "tspv/client/stylesheets/style.css",
 					"semi_transient": false,
 					"settings":
@@ -1117,11 +1226,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 11,
 					"file": "tspv/client/stylesheets/main.css",
 					"semi_transient": false,
 					"settings":
@@ -1146,11 +1255,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 12,
 					"file": "tspv/server/integration.js",
 					"semi_transient": false,
 					"settings":
@@ -1177,11 +1286,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 13,
 					"file": "tspv/client/lib/proxy_settings.js",
 					"semi_transient": false,
 					"settings":
@@ -1205,11 +1314,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 18,
+					"stack_index": 19,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 14,
 					"file": "tspv/client/lib/scrape.js",
 					"semi_transient": false,
 					"settings":
@@ -1235,24 +1344,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 19,
+					"stack_index": 20,
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 15,
 					"file": "tspv/client/watchlist.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1576,
+						"buffer_size": 1666,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								315,
-								315
+								660,
+								660
 							]
 						],
 						"settings":
@@ -1265,11 +1374,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 16,
 					"file": "tspv/client/lib/startup.js",
 					"semi_transient": false,
 					"settings":
@@ -1293,24 +1402,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 17,
+					"stack_index": 18,
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 17,
 					"file": "tspv/client/tspv.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4089,
+						"buffer_size": 4103,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								395,
-								395
+								3399,
+								3399
 							]
 						],
 						"settings":
@@ -1320,14 +1429,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1372.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 17,
+					"buffer": 18,
 					"file": "tspv/server/lib/external.js",
 					"semi_transient": false,
 					"settings":
@@ -1353,11 +1462,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 18,
+					"buffer": 19,
 					"file": "TODO",
 					"semi_transient": false,
 					"settings":
@@ -1369,8 +1478,8 @@
 						"selection":
 						[
 							[
-								210,
-								210
+								621,
+								621
 							]
 						],
 						"settings":
@@ -1381,11 +1490,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 19,
+					"buffer": 20,
 					"file": "tspv/client/ib.js",
 					"semi_transient": false,
 					"settings":
@@ -1412,7 +1521,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 12,
 					"type": "text"
 				}
 			]
@@ -1467,6 +1576,18 @@
 		"selected_items":
 		[
 			[
+				"tspv.h",
+				"client/tspv.html"
+			],
+			[
+				"ib",
+				"client/ib.html"
+			],
+			[
+				"watch",
+				"client/watchlist.html"
+			],
+			[
 				"exter",
 				"server/lib/external.js"
 			],
@@ -1476,10 +1597,6 @@
 			],
 			[
 				"ib.",
-				"client/ib.html"
-			],
-			[
-				"ib",
 				"client/ib.html"
 			],
 			[

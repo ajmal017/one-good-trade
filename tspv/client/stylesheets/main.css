@@ -4,10 +4,10 @@
 
 body {
   background-color: #ccc;
+  min-height: 2000px;
 }
 
 #main {
-  margin-top: 55px;
   padding: 1%;
 }
 
@@ -17,4 +17,7 @@ body {
   padding: 10px;
   margin-bottom: 10px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-static-top {
 }

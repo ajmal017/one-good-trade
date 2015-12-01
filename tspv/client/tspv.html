@@ -1,31 +1,38 @@
-<template name="layout">
-	<head>
-		<title>One Good Trade</title>
-	</head>
+<head>
+  <title>One Good Trade</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<template name="layout">
+
+
+<nav class="navbar navbar-default navbar-static-top">
   <div class="container">
     <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>    
 	    <a class="navbar-brand" href="#">ONE.GOOD.TRADE</a>
     </div>
 
-    <ul class="nav navbar-nav">
-      <!--
-      <li class="{{#if isJournal}}active{{/if}}"><a href="{{pathFor 'journals'}}">Journals</a></li>
-      -->
-      <li class="{{#if isPositions}}active{{/if}}"><a href="{{pathFor 'positions'}}">Positions</a></li>
-      <!--
-      <li class="{{#if isAccountListTS}}active{{/if}}"><a href="{{pathFor 'accountListTS'}}">TS</a></li>
-      -->
-      <li class="{{#if isWatchlist}}active{{/if}}"><a href="{{pathFor 'watchlist'}}">Watchlist</a></li>
-      <li class="{{#if isSectorEtfs}}active{{/if}}"><a href="{{pathFor 'sectorEtfs'}}">Market</a></li>
-      <li class="{{#if isBondsCommodities}}active{{/if}}"><a href="{{pathFor 'bondsCommodities'}}">Bonds/Commodities</a></li>
-      <li class="{{#if isWeeklies}}active{{/if}}"><a href="{{pathFor 'weeklies'}}">Weeklies</a></li>
-    </ul>
-
-		<ul class="nav navbar-nav navbar-right">
-    </ul>
-
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <!--
+        <li class="{{#if isJournal}}active{{/if}}"><a href="{{pathFor 'journals'}}">Journals</a></li>
+        -->
+        <li class="{{#if isPositions}}active{{/if}}"><a href="{{pathFor 'positions'}}">Positions</a></li>
+        <!--
+        <li class="{{#if isAccountListTS}}active{{/if}}"><a href="{{pathFor 'accountListTS'}}">TS</a></li>
+        -->
+        <li class="{{#if isWatchlist}}active{{/if}}"><a href="{{pathFor 'watchlist'}}">Watchlist</a></li>
+        <li class="{{#if isSectorEtfs}}active{{/if}}"><a href="{{pathFor 'sectorEtfs'}}">Market</a></li>
+        <li class="{{#if isBondsCommodities}}active{{/if}}"><a href="{{pathFor 'bondsCommodities'}}">Bonds/Commodities</a></li>
+        <li class="{{#if isWeeklies}}active{{/if}}"><a href="{{pathFor 'weeklies'}}">Weeklies</a></li>
+      </ul>
+    </div>
   </div>
 </nav>
 

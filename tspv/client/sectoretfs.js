@@ -10,8 +10,10 @@ Template.sectorEtfs.helpers({
       {Symbol:"XLE"},
       {Symbol:"XLP"},
       {Symbol:"XLV"},
+      {Synbol;"XBI"},
       {Symbol:"XLU"},
       {Symbol:"XLF"},
+      {Symbol:"XHB"},
       {Symbol:"IYR"},
       {Symbol:"IYZ"}
     ];

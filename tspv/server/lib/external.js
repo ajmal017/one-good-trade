@@ -6,31 +6,29 @@ moment = Meteor.npmRequire('moment');
 Meteor.methods({
   getNextEarningDate: function(symbol) {
     symbol = symbol.toLowerCase();
-    var letter = symbol[0];
-    var url = "http://biz.yahoo.com/research/earncal/" + letter + "/" + symbol + ".html";
+    var url = "https://finance.yahoo.com/quote/" + symbol + "?p=" + symbol;
 
     var result = makeHttpCall("GET",url, {}, 1);
     if (!result || !result.content) return "N/A";
 
     var $ = Cheerio.load(result.content);
 
-    var tbl = $("form.yfi_biz_form table");
-    var el = $("b", tbl);
+    var el = $('td[data-test="EARNINGS_DATE-value"]');
     if (!el) return "N/A";
 
-    var html = el.html();
-    if (!el) return "N/A";
-    
-    var parts = el.html().split("\n");
-    return parts[parts.length-1]
-
+    return el.text();
   },
 
 
   refreshWeeklies: function(token) {
-    var url = "http://www.optionsclearing.com/webapps/weekly-options?action=download";
-    var result = HTTP.call("POST", url);
-    var result = result.content;
+    process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
+    var url = "https://www.theocc.com/webapps/weekly-options?action=download";
+    try {
+      var result = HTTP.call("POST", url);
+      var result = result.content;
+    } catch (e) {
+      console.log(e);
+    }
 
     var lines = result.split("\n");
 
